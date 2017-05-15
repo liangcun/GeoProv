@@ -1,0 +1,11 @@
+# SPARQL query to retrieve spatial and temporal information with ISO lineage syntax
+SELECT  ?executionTime ?algDescription ?source ?srcDescription ?extent ?referenceSystem
+WHERE {:Processd9f08184-8af3-471a-af35-0650a8b7f72d li:stepDateTime ?executionTime .
+       :Processd9f08184-8af3-471a-af35-0650a8b7f72d li:processingInformation ?processingInfo .
+       ?processingInfo li:algorithm ?algorithm .
+       ?algorithm md:description ?algDescription .
+       :Processd9f08184-8af3-471a-af35-0650a8b7f72d li:output ?source .
+		   ?source md:description ?srcDescription .
+       ?source li:scope ?scope . 
+       ?scope md:extent ?extent .
+		   ?source li:sourceReferenceSystem ?referenceSystem .} 

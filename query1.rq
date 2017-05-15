@@ -1,4 +1,0 @@
-# SPARQL query to select process steps with W3C PROV syntax
-SELECT ?activity ?class
-WHERE { ?activity a ?class.
-       	?class rdfs:subClassOf* prov:Activity.}
