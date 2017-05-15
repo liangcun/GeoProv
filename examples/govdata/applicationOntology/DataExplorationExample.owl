@@ -1,0 +1,202 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY spatial "http://geovocab.org/spatial#" >
+    <!ENTITY geom "http://geovocab.org/geometry#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY deex "http://geos.whu.edu.cn/ont/ex/DataExplorationExample.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://geos.whu.edu.cn/ont/ex/DataExplorationExample.owl#"
+     xml:base="http://geos.whu.edu.cn/ont/ex/DataExplorationExample.owl"
+		 xmlns:dc="http://purl.org/dc/elements/1.1/"
+		 xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:deex="http://geos.whu.edu.cn/ont/ex/DataExplorationExample.owl#"
+     xmlns:spatial="http://geovocab.org/spatial#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:geom="http://geovocab.org/geometry#">
+    <owl:Ontology rdf:about="http://geos.whu.edu.cn/ont/ex/DataExplorationExample.owl">
+		    <dc:title> Ontology to specify concepts in the DataExploration Example</dc:title>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liangcun Jiang</dc:creator>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peng Yue</dc:creator>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xia Guo</dc:creator>
+        <dct:created>2015-08-11</dct:created>
+        <dct:modified>2017-03-27</dct:modified>
+        <owl:imports rdf:resource="http://geovocab.org/geometry"/>
+        <owl:imports rdf:resource="http://geovocab.org/spatial"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://geos.whu.edu.cn/ont/ex/DataExplorationExample.owl#hasProperty -->
+
+    <owl:ObjectProperty rdf:about="&deex;hasProperty">
+        <rdfs:comment>relates a resource to its non-geometric property</rdfs:comment>
+        <rdfs:range rdf:resource="&deex;Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://geos.whu.edu.cn/ont/ex/DataExplorationExample.owl#id -->
+
+    <owl:DatatypeProperty rdf:about="&deex;id"/>
+    
+
+
+    <!-- http://geos.whu.edu.cn/ont/ex/DataExplorationExample.owl#inRegion -->
+
+    <owl:DatatypeProperty rdf:about="&deex;inRegion">
+        <rdfs:comment>identify the belonging administrative region</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://geos.whu.edu.cn/ont/ex/DataExplorationExample.owl#latitude -->
+
+    <owl:DatatypeProperty rdf:about="&deex;latitude"/>
+    
+
+
+    <!-- http://geos.whu.edu.cn/ont/ex/DataExplorationExample.owl#longitude -->
+
+    <owl:DatatypeProperty rdf:about="&deex;longitude"/>
+    
+
+
+    <!-- http://geos.whu.edu.cn/ont/ex/DataExplorationExample.owl#value -->
+
+    <owl:DatatypeProperty rdf:about="&deex;value"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://geos.whu.edu.cn/ont/ex/DataExplorationExample.owl#Address -->
+
+    <owl:Class rdf:about="&deex;Address">
+        <rdfs:subClassOf rdf:resource="&deex;Property"/>
+        <rdfs:comment>The address of a resource</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://geos.whu.edu.cn/ont/ex/DataExplorationExample.owl#AdministrativeRegion -->
+
+    <owl:Class rdf:about="&deex;AdministrativeRegion">
+        <rdfs:label>AdministrativeRegion </rdfs:label>
+        <rdfs:subClassOf rdf:resource="&spatial;Feature"/>
+        <rdfs:comment>represents an administrative region</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://geos.whu.edu.cn/ont/ex/DataExplorationExample.owl#Kindergarten -->
+
+    <owl:Class rdf:about="&deex;Kindergarten">
+        <rdfs:label>Kindergarten</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&spatial;Feature"/>
+        <rdfs:comment>represents the kindergarten feature type</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://geos.whu.edu.cn/ont/ex/DataExplorationExample.owl#KindergartenNum -->
+
+    <owl:Class rdf:about="&deex;KindergartenNum">
+        <rdfs:label>KindergartenNum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&deex;Property"/>
+        <rdfs:comment>The number of kindergartens in a region</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://geos.whu.edu.cn/ont/ex/DataExplorationExample.owl#PopBorn -->
+
+    <owl:Class rdf:about="&deex;PopBorn">
+        <rdfs:label>PopBorn</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&deex;Property"/>
+        <rdfs:comment>The population of birth in a region</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://geos.whu.edu.cn/ont/ex/DataExplorationExample.owl#PopDensity -->
+
+    <owl:Class rdf:about="&deex;PopDensity">
+        <rdfs:label>PopDensity </rdfs:label>
+        <rdfs:subClassOf rdf:resource="&deex;Property"/>
+        <rdfs:comment>Population density of a region</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://geos.whu.edu.cn/ont/ex/DataExplorationExample.owl#PopTotal -->
+
+    <owl:Class rdf:about="&deex;PopTotal">
+        <rdfs:label>PopTotal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&deex;Property"/>
+        <rdfs:comment>Total population in a region</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://geos.whu.edu.cn/ont/ex/DataExplorationExample.owl#Property -->
+
+    <owl:Class rdf:about="&deex;Property">
+        <rdfs:comment>records a non-geometric property of a spatial feature</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://geos.whu.edu.cn/ont/ex/DataExplorationExample.owl#SpatialNet -->
+
+    <owl:Class rdf:about="&deex;SpatialNet">
+        <rdfs:label>SpatialNet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&spatial;Feature"/>
+        <rdfs:comment>a data unit that represents a spatial division</rdfs:comment>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

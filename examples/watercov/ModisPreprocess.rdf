@@ -1,0 +1,148 @@
+<rdf:RDF
+    xmlns:iso19103="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#"
+    xmlns:iso19108="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#"
+    xmlns:li="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#"
+    xmlns:md="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#"
+    xmlns:prov="http://www.w3.org/ns/prov#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:unit="http://data.nasa.gov/qudt/owl/unit#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <li:LI_Lineage rdf:about="http://202.114.118.190:8099/lod/Lineage0655cda9-f82d-47e7-ac86-f624718c822c">
+	  <md:contact>
+		   <md:CI_Responsibility rdf:about="http://202.114.118.190:8099/lod/Processor78e5f4f8-5bae-4e17-aa07-6fca4a43e67d">
+            <md:role rdf:resource="http://geos.whu.edu.cn/ont/iso19115/codelist/RoleCode.owl#processor"/>
+						<md:party>
+						   <md:CI_Party rdf:about="http://202.114.118.190:8099/lod/Party80e5f4f8-4bae-5d17-ef07-6fca4a451b7a"/>
+						</md:party>
+          </md:CI_Responsibility>
+		</md:contact>
+		<md:dateInfo>
+		   <md:CI_Date>
+						<md:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-07-15T15:35:00</md:date>
+       </md:CI_Date>
+		</md:dateInfo>
+    <li:lineageSource>
+      <rdf:Description rdf:about="http://202.114.118.190:8099/lod/MODIS505f68f4-a8c7-4823-bad5-8672c02cc0ab">
+        <prov:wasDerivedFrom>
+          <li:LE_Source rdf:about="http://202.114.118.190:8099/lod/MODISbb39c5b9-c4e5-48f9-9d37-4347423b7ff1">
+            <li:scope>
+              <md:MD_Scope>
+                <md:extent>
+                  <md:EX_Extent rdf:about="http://202.114.118.190:8099/lod/Extent64a17166-ea36-4c4e-9c03-37cc438be9bd">
+                    <md:temporalElement>
+                      <md:EX_TemporalExtent>
+                        <md:extent>
+                          <iso19108:Period rdf:about="http://202.114.118.190:8099/lod/Time975fcd62-0c46-4a8e-8b73-04b97f3c320b">
+                            <iso19108:end>
+                              <iso19108:Instant>
+                                <iso19108:dateTimePosition rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-06-25T03:45:00</iso19108:dateTimePosition>
+                              </iso19108:Instant>
+                            </iso19108:end>
+                            <iso19108:begin>
+                              <iso19108:Instant>
+                                <iso19108:dateTimePosition rdf:datatype=
+                                "http://www.w3.org/2001/XMLSchema#dateTime"
+                                >2010-06-18T01:50:00</iso19108:dateTimePosition>
+                              </iso19108:Instant>
+                            </iso19108:begin>
+                          </iso19108:Period>
+                        </md:extent>
+                      </md:EX_TemporalExtent>
+                    </md:temporalElement>
+                    <md:geographicElement>
+                      <md:EX_GeographicBoundingBox>
+                        <md:northBoundLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">29.9999999973</md:northBoundLatitude>
+                        <md:southBoundLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20.0011265294</md:southBoundLatitude>
+                        <md:eastBoundLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">127.019523108</md:eastBoundLongitude>
+                        <md:westBoundLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">106.417777237</md:westBoundLongitude>
+                      </md:EX_GeographicBoundingBox>
+                    </md:geographicElement>
+                    <md:description>this is a segment that describes the spatial and temporal extent of the data</md:description>
+                  </md:EX_Extent>
+                </md:extent>
+              </md:MD_Scope>
+            </li:scope>
+            <li:sourceSpatialResolution>
+              <md:MD_Resolution rdf:about="http://202.114.118.190:8099/lod/Resolution_500M_MOD09A1">
+                <md:distance>
+                  <iso19103:Distance>
+                    <iso19103:value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">500</iso19103:value>
+                    <iso19103:uom rdf:resource="http://data.nasa.gov/qudt/owl/unit#Meter"/>
+                  </iso19103:Distance>
+                </md:distance>
+              </md:MD_Resolution>
+            </li:sourceSpatialResolution>
+            <li:sourceReferenceSystem>
+              <md:MD_ReferenceSystem rdf:about="http://202.114.118.190:8099/lod/RS08f3199b-635b-4a89-8721-90f46ad09769">
+                <md:referenceSystemIdentifier>
+                  <md:RS_Identifier>
+                    <md:code>Sphere_Sinusoidal</md:code>
+                  </md:RS_Identifier>
+                </md:referenceSystemIdentifier>
+              </md:MD_ReferenceSystem>
+            </li:sourceReferenceSystem>
+						<li:sourceCitation>
+						  <md:CI_Citation rdf:about="http://202.114.118.190:8099/lod/Citation_MOD09A1.A2010169.h28v06.005.2010178113848">
+							   <md:title>MOD09A1.A2010169.h28v06.005.2010178113848.hdf</md:title>
+								 <md:onlineResource>
+								   <md:CI_OnlineResource rdf:about="http://202.114.118.190:8099/lod/OnLineResource_MOD09A1.A2010169.h28v06.005.2010178113848">
+									   <md:linkage>202.114.118.190:8099/data/wf/MOD09A1.A2010169.h28v06.005.2010178113848.hdf</md:linkage>
+								     <md:function rdf:resource="http://geos.whu.edu.cn/ont/iso19115/codelist/OnLineFunctionCode.owl#fileAcces"/>
+									 </md:CI_OnlineResource>
+								 </md:onlineResource>
+							</md:CI_Citation>
+						</li:sourceCitation>
+            <md:description>MOD09A1-Level 3 8-Day Surface Reflectance</md:description>
+          </li:LE_Source>
+        </prov:wasDerivedFrom>
+      </rdf:Description>
+    </li:lineageSource>
+    <li:lineageSource>
+      <rdf:Description rdf:about="http://202.114.118.190:8099/lod/MODIScb998e00-baf0-4594-bad2-5258bc4eb71f">
+        <prov:wasDerivedFrom rdf:resource="http://202.114.118.190:8099/lod/MODISbb39c5b9-c4e5-48f9-9d37-4347423b7ff1"/>
+      </rdf:Description>
+    </li:lineageSource>
+    <li:lineageSource rdf:resource="http://202.114.118.190:8099/lod/MODISbb39c5b9-c4e5-48f9-9d37-4347423b7ff1"/>
+    <li:processStep>
+      <li:LE_ProcessStep rdf:about="http://202.114.118.190:8099/lod/Process5d61f53f-66bc-4f39-a53f-e62c816bc3e6">
+        <li:processingInformation>
+          <li:LE_Processing rdf:about="http://202.114.118.190:8099/lod/ProcessingInfo885ca263-f825-45e9-a9a2-9fc3aba41c07">
+            <li:procedureDescription>The pre-process operations include image clip, pre-projection and MODIS bands extraction </li:procedureDescription>
+            <li:softwareReference>
+              <md:CI_Citation>
+                <md:title>Esri ArcGIS 10.1</md:title>
+              </md:CI_Citation>
+            </li:softwareReference>
+            <li:identifier>
+              <md:MD_Identifier>
+                <md:code>MODISPreprocess</md:code>
+              </md:MD_Identifier>
+            </li:identifier>
+          </li:LE_Processing>
+        </li:processingInformation>
+        <li:output rdf:resource="http://202.114.118.190:8099/lod/MODIS505f68f4-a8c7-4823-bad5-8672c02cc0ab"/>
+        <li:output rdf:resource="http://202.114.118.190:8099/lod/MODIScb998e00-baf0-4594-bad2-5258bc4eb71f"/>
+        <li:source rdf:resource="http://202.114.118.190:8099/lod/MODISbb39c5b9-c4e5-48f9-9d37-4347423b7ff1"/>
+        <md:description>MODIS pre-process in ArcGIS</md:description>
+        <li:stepDateTime>
+          <iso19108:Period rdf:about="http://202.114.118.190:8099/lod/Period_MOD09A1_PreProcess">
+            <iso19108:end>
+              <iso19108:Instant>
+                <iso19108:dateTimePosition rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                >2015-07-15T15:05:00</iso19108:dateTimePosition>
+              </iso19108:Instant>
+            </iso19108:end>
+            <iso19108:begin>
+              <iso19108:Instant>
+                <iso19108:dateTimePosition rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                >2015-07-15T15:00:00</iso19108:dateTimePosition>
+              </iso19108:Instant>
+            </iso19108:begin>
+          </iso19108:Period>
+        </li:stepDateTime>
+      </li:LE_ProcessStep>
+    </li:processStep>
+  </li:LI_Lineage>
+</rdf:RDF>

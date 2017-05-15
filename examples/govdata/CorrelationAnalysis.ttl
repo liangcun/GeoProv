@@ -1,0 +1,28 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+<http://202.114.118.190:8099/lod/Lineagedd1d71ce-3426-408c-95de-b9e47515bc4c>
+  a prov:Bundle, prov:Entity ;
+	prov:generatedAtTime "2015-09-16T12:52:02Z"^^xsd:dateTime;
+  foaf:primaryTopic <http://202.114.118.190:8099/lod/Resultcfe8fff5-b2ce-441c-9771-90e233f2b09e> ;
+  rdfs:label "lineage about correlation analysis process to explore the relationships between government data " .
+
+<http://202.114.118.190:8099/lod/Resultcfe8fff5-b2ce-441c-9771-90e233f2b09e>
+  a prov:Entity ;
+	prov:atLocation <http://geos.whu.edu.cn/ont/ex/cor_kg_pop.png>;
+  rdfs:label "Correlation analysis diagram between population of birth and number of kindergartens" ;
+  prov:wasGeneratedBy <http://202.114.118.190:8099/lod/Activity0274bfda-6f4d-4ea8-9bef-3b9d02f6a735> ;
+	prov:wasDerivedFrom <http://202.114.118.190:8099/lod/AttrTable84fa4515-e36b-44ca-af3c-333a608a4e6c> .
+
+<http://202.114.118.190:8099/lod/Activity0274bfda-6f4d-4ea8-9bef-3b9d02f6a735>
+  a prov:Activity ;
+  rdfs:label "linear correlation analysis in R " ;
+  prov:used <http://202.114.118.190:8099/lod/AttrTable84fa4515-e36b-44ca-af3c-333a608a4e6c> .
+
+<http://202.114.118.190:8099/lod/AttrTable84fa4515-e36b-44ca-af3c-333a608a4e6c>
+  a prov:Entity ;
+  rdfs:label "Attribute table exported from SpatialNet shapefile" ;
+	prov:atLocation <http://geos.whu.edu.cn/ont/ex/SpatialNetTable.xls>;
+  prov:wasDerivedFrom <http://202.114.118.190:8099/lod/Source3a2a387b-076a-48e9-b6fa-c4795d3fe581> .
