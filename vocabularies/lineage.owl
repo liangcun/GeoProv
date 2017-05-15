@@ -1,0 +1,871 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://geos.whu.edu.cn/ont/iso19115/lineage#"
+     xml:base="http://geos.whu.edu.cn/ont/iso19115/lineage"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:li="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#"
+     xmlns:iso19103="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#"
+     xmlns:iso19108="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#"
+     xmlns:iso19115="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+    <owl:Ontology rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage">
+				<dc:title>ISO lineage ontology</dc:title>
+				<dc:description>This document presents an OWL2 Web Ontology Language encoding of the lineage model specified in ISO 19115-1:2014</dc:description>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liangcun Jiang</dc:creator>
+				<dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peng Yue</dc:creator>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xia Guo</dc:creator>   
+        <dct:created>2015-07-14</dct:created>
+        <dct:modified>2017-03-20</dct:modified>
+        <owl:imports rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#"/>
+		</owl:Ontology>
+		<!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->   
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_Algorithm -->
+    <owl:Class rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_Algorithm">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#citation"/>
+                <owl:allValuesFrom rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Citation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#citation"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Citation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#description"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#description"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>details of the methodology by which geographic information was derived from the instrument readings</rdfs:comment>
+        <rdfs:label>LE_Algorithm</rdfs:label>
+    </owl:Class>
+    
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_NominalResolution -->
+    <owl:Class rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_NominalResolution">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#groundResolution"/>
+                <owl:allValuesFrom rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#Distance"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#scanningResolution"/>
+                <owl:allValuesFrom rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#Distance"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#groundResolution"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#Distance"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#scanningResolution"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#Distance"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment>distance between consistent parts of (centre, left side, right side) adjacent pixels</rdfs:comment>
+        <rdfs:label>LE_NominalResolution</rdfs:label>
+    </owl:Class>
+    
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_ProcessStep -->
+    <owl:Class rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_ProcessStep">
+        <rdfs:subClassOf rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_ProcessStep"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#output"/>
+                <owl:allValuesFrom rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_Source"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#processingInformation"/>
+                <owl:allValuesFrom rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_Processing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#report"/>
+                <owl:allValuesFrom rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_ProcessStepReport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#output"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_Source"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#report"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_ProcessStepReport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#processingInformation"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_Processing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>information about an event or transformation in the life of the dataset including details of the algorithm and software used for processing (LI_ProcessStep extended)</rdfs:comment>
+        <rdfs:label>LE_ProcessStep</rdfs:label>
+    </owl:Class>
+    
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_ProcessStepReport -->
+    <owl:Class rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_ProcessStepReport">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#lineage.owl#fileType"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#name"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#description"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#name"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#fileType"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#description"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>report of what occurred during the process step</rdfs:comment>
+        <rdfs:label>LE_ProcessStepReport</rdfs:label>
+    </owl:Class>
+    
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_Processing -->
+    <owl:Class rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_Processing">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#algorithm"/>
+                <owl:allValuesFrom rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_Algorithm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#documentation"/>
+                <owl:allValuesFrom rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Citation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#softwareReference"/>
+                <owl:allValuesFrom rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Citation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#identifier"/>
+                <owl:allValuesFrom rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#MD_Identifier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#algorithm"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_Algorithm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#documentation"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Citation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#identifier"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#MD_Identifier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#softwareReference"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Citation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#procedureDescription"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#runTimeParameters"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#procedureDescription"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#runTimeParameters"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>comprehensive information about the procedure(s), process(es) and algorithm(s) applied in the process step</rdfs:comment>
+        <rdfs:label>LE_Processing</rdfs:label>
+    </owl:Class>
+    
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_Source -->
+    <owl:Class rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_Source">
+        <rdfs:subClassOf rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_Source"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#processedLevel"/>
+                <owl:allValuesFrom rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#MD_Identifier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#resolution"/>
+                <owl:allValuesFrom rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_NominalResolution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#processedLevel"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#MD_Identifier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#resolution"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_NominalResolution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>information on data sets input to or output by the processing step (LI_Source extended)</rdfs:comment>
+        <rdfs:label>LE_Source</rdfs:label>
+    </owl:Class>
+    
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_Lineage -->
+    <owl:Class rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_Lineage">
+        <rdfs:comment>information about the events or source data used in constructing the data specified by the scope or lack of knowledge about lineage</rdfs:comment>
+        <rdfs:label>LI_Lineage</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#additionalDocumentation"/>
+                <owl:allValuesFrom rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Citation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#scope"/>
+                <owl:allValuesFrom rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#MD_Scope"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#processStep"/>
+                <owl:allValuesFrom rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_ProcessStep"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#lineageSource"/>
+                <owl:allValuesFrom rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_Source"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#additionalDocumentation"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Citation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#processStep"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_ProcessStep"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#lineageSource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_Source"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#scope"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#MD_Scope"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#statement"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#statement"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+				<rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#processStep"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
+                                <owl:onClass rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_ProcessStep"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#statement"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
+                                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#lineageSource"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_Source"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#lineageSource"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
+                                <owl:onClass rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_Source"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#statement"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
+                                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#processStep"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_ProcessStep"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_ProcessStep -->
+    <owl:Class rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_ProcessStep">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#scope"/>
+                <owl:allValuesFrom rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#MD_Scope"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#source"/>
+                <owl:allValuesFrom rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_Source"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#processor"/>
+                <owl:allValuesFrom rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Responsibility"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#reference"/>
+                <owl:allValuesFrom rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Citation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#stepDateTime"/>
+                <owl:allValuesFrom rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#Primitive"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#source"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_Source"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#processor"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Responsibility"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#reference"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Citation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#scope"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#MD_Scope"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#stepDateTime"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#Primitive"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#rationale"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#description"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#description"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#rationale"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>information about an event or transformation in the life of a resource including the process used to maintain the resource</rdfs:comment>
+        <rdfs:label>LI_ProcessStep</rdfs:label>
+    </owl:Class>
+    
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_Source -->
+    <owl:Class rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_Source">
+        <rdfs:comment>information about the source resource used in creating the data specified by the scope</rdfs:comment>
+        <rdfs:label>LI_Source</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#scope"/>
+                <owl:allValuesFrom rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#MD_Scope"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#sourceCitation"/>
+                <owl:allValuesFrom rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Citation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#sourceMetadata"/>
+                <owl:allValuesFrom rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Citation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#sourceReferenceSystem"/>
+                <owl:allValuesFrom rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#MD_ReferenceSystem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#sourceSpatialResolution"/>
+                <owl:allValuesFrom rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#MD_Resolution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#sourceStep"/>
+                <owl:allValuesFrom rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_ProcessStep"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#sourceMetadata"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Citation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#sourceStep"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_ProcessStep"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#scope"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#MD_Scope"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#sourceCitation"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Citation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#sourceReferenceSystem"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#MD_ReferenceSystem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#sourceSpatialResolution"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#MD_Resolution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#description"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#description"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+				<rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#scope"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#MD_Scope"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#description"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+		
+		
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->  
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#additionalDocumentation -->
+    <owl:ObjectProperty rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#additionalDocumentation">
+        <rdfs:domain rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_Lineage"/>
+        <rdfs:range rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Citation"/>
+    </owl:ObjectProperty>
+    
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#algorithm -->
+    <owl:ObjectProperty rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#algorithm">
+        <rdfs:domain rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_Processing"/>
+        <rdfs:range rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_Algorithm"/>
+        <rdfs:comment>details of the methodology by which geographic information was derived from the instrument readings</rdfs:comment>
+    </owl:ObjectProperty>
+    
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#citation -->
+    <owl:ObjectProperty rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#citation">
+        <rdfs:domain rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_Algorithm"/>
+        <rdfs:range rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Citation"/>
+        <rdfs:comment>information identifying the algorithm and version or date</rdfs:comment>
+        <rdfs:label>LE_Algorithm.citation</rdfs:label>
+    </owl:ObjectProperty>
+    
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#documentation -->
+    <owl:ObjectProperty rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#documentation">
+        <rdfs:domain rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_Processing"/>
+        <rdfs:range rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Citation"/>
+        <rdfs:comment>reference to documentation describing the processing</rdfs:comment>
+    </owl:ObjectProperty>
+    
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#groundResolution -->
+    <owl:ObjectProperty rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#groundResolution">
+        <rdfs:domain rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_NominalResolution"/>
+        <rdfs:range rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#Distance"/>
+        <rdfs:comment>distance between consistent parts of (centre, left side, right side) adjacent pixels in the object space</rdfs:comment>
+    </owl:ObjectProperty>
+    
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#scope -->
+    <owl:ObjectProperty rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#scope">
+        <rdfs:domain rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_Lineage"/>
+        <rdfs:domain rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_ProcessStep"/>
+        <rdfs:domain rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_Source"/>
+        <rdfs:range rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#MD_Scope"/>
+        <rdfs:comment>type of resource and/or extent of the resource, or to which the lineage information or process step applies.</rdfs:comment>
+        <rdfs:label>scope</rdfs:label>
+    </owl:ObjectProperty>
+    
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#output -->
+    <owl:ObjectProperty rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#output">
+        <rdfs:domain rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_ProcessStep"/>
+        <rdfs:range rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_Source"/>
+        <rdfs:comment>description of the product generated as a result of the process step</rdfs:comment>
+    </owl:ObjectProperty>
+    
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#source -->
+    <owl:ObjectProperty rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#source">
+        <rdfs:domain rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_ProcessStep"/>
+        <rdfs:range rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_Source"/>
+        <rdfs:comment>information about the source data used in creating the data specified by the scope</rdfs:comment>
+        <rdfs:label>LI_ProcessStep.source</rdfs:label>
+    </owl:ObjectProperty>
+    
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#processStep -->
+    <owl:ObjectProperty rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#processStep">
+        <rdfs:domain rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_Lineage"/>
+        <rdfs:range rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_ProcessStep"/>
+        <rdfs:comment>information about events in the life of a resource specified by the scope</rdfs:comment>
+    </owl:ObjectProperty>
+    
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#processedLevel -->
+    <owl:ObjectProperty rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#processedLevel">
+        <rdfs:domain rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_Source"/>
+        <rdfs:range rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#MD_Identifier"/>
+        <rdfs:comment>processing level of the source data</rdfs:comment>
+    </owl:ObjectProperty>
+    
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#processingInformation -->
+    <owl:ObjectProperty rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#processingInformation">
+        <rdfs:domain rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_ProcessStep"/>
+        <rdfs:range rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_Processing"/>
+        <rdfs:comment>comprehensive information about the procedure by which the algorithm was applied to derive geographic data from the raw instrument measurements, such as datasets, software used, and the processing environment</rdfs:comment>
+    </owl:ObjectProperty>
+    
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#processor -->
+    <owl:ObjectProperty rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#processor">
+        <rdfs:domain rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_ProcessStep"/>
+        <rdfs:range rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Responsibility"/>
+        <rdfs:comment>identification of, and means of communication with, person(s) and organisation(s) associated with the process step</rdfs:comment>
+    </owl:ObjectProperty>
+    
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#reference -->
+    <owl:ObjectProperty rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#reference">
+        <rdfs:domain rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_ProcessStep"/>
+        <rdfs:range rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Citation"/>
+        <rdfs:comment>process step documentation</rdfs:comment>
+    </owl:ObjectProperty>
+    
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#report -->
+    <owl:ObjectProperty rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#report">
+        <rdfs:domain rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_ProcessStep"/>
+        <rdfs:range rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_ProcessStepReport"/>
+        <rdfs:comment>report generated by the process step</rdfs:comment>
+    </owl:ObjectProperty>
+    
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#resolution -->
+    <owl:ObjectProperty rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#resolution">
+        <rdfs:domain rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_Source"/>
+        <rdfs:range rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_NominalResolution"/>
+        <rdfs:comment>distance between consistent parts (centre, left side, right side) of two adjacent pixels</rdfs:comment>
+    </owl:ObjectProperty>
+    
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#scanningResolution -->
+    <owl:ObjectProperty rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#scanningResolution">
+        <rdfs:domain rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_NominalResolution"/>
+        <rdfs:range rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#Distance"/>
+        <rdfs:comment>distance between consistent parts of (centre, left side, right side) adjacent pixels in the scan plane</rdfs:comment>
+    </owl:ObjectProperty>
+    
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#softwareReference -->
+    <owl:ObjectProperty rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#softwareReference">
+        <rdfs:domain rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_Processing"/>
+        <rdfs:range rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Citation"/>
+        <rdfs:comment>reference to document describing processing software</rdfs:comment>
+    </owl:ObjectProperty>
+    
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#lineageSource -->
+    <owl:ObjectProperty rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#lineageSource">
+        <rdfs:domain rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_Lineage"/>
+        <rdfs:range rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_Source"/>
+        <rdfs:comment>information about the source data used in creating the data specified by the scope. To differentiate from 'source' role in LI_ProcessStep, 'lineageSource' is named here</rdfs:comment>
+        <rdfs:label>LI_Lineage.source</rdfs:label>
+    </owl:ObjectProperty>
+    
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#sourceCitation -->
+    <owl:ObjectProperty rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#sourceCitation">
+        <rdfs:domain rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_Source"/>
+        <rdfs:range rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Citation"/>
+        <rdfs:comment>recommended reference to be used for the source resource</rdfs:comment>
+    </owl:ObjectProperty>
+    
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#sourceMetadata -->
+    <owl:ObjectProperty rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#sourceMetadata">
+        <rdfs:domain rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_Source"/>
+        <rdfs:range rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Citation"/>
+        <rdfs:comment>identifier and link to source metadata</rdfs:comment>
+    </owl:ObjectProperty>
+    
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#sourceReferenceSystem -->
+    <owl:ObjectProperty rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#sourceReferenceSystem">
+        <rdfs:domain rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_Source"/>
+        <rdfs:range rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#MD_ReferenceSystem"/>
+        <rdfs:comment>spatial reference system used by the source resource</rdfs:comment>
+    </owl:ObjectProperty>
+    
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#sourceSpatialResolution -->
+    <owl:ObjectProperty rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#sourceSpatialResolution">
+        <rdfs:domain rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_Source"/>
+        <rdfs:range rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#MD_Resolution"/>
+        <rdfs:comment>level of detail expressed as a scale factor, a distance or an angle</rdfs:comment>
+    </owl:ObjectProperty>
+    
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#sourceStep -->
+    <owl:ObjectProperty rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#sourceStep">
+        <rdfs:domain rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_Source"/>
+        <rdfs:range rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_ProcessStep"/>
+        <rdfs:comment>information about a process step in which this source was used</rdfs:comment>
+    </owl:ObjectProperty>
+    
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#stepDateTime -->
+    <owl:ObjectProperty rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#stepDateTime">
+        <rdfs:domain rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_ProcessStep"/>
+        <rdfs:range rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#Primitive"/>
+        <rdfs:comment>date, time, range or period of process step</rdfs:comment>
+    </owl:ObjectProperty>
+    
+    <!-- http://geos.whu.edu.cn/ont/iso19115/metadata.owl#identifier -->
+
+    <rdf:Description rdf:about="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#identifier">
+        <rdfs:range rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#MD_Identifier"/>
+    </rdf:Description>
+    
+		
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->   
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#fileType -->
+    <owl:DatatypeProperty rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#fileType">
+        <rdfs:comment>type of file</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#name -->
+    <owl:DatatypeProperty rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#name">
+        <rdfs:comment>name </rdfs:comment>
+    </owl:DatatypeProperty>
+    
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#procedureDescription -->
+    <owl:DatatypeProperty rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#procedureDescription">
+        <rdfs:domain rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_Processing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>additional details about the processing procedures</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#rationale -->
+    <owl:DatatypeProperty rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#rationale">
+        <rdfs:domain rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_ProcessStep"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>requirement or purpose for the process step</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#runTimeParameters -->
+    <owl:DatatypeProperty rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#runTimeParameters">
+        <rdfs:domain rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_Processing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>parameters to control the processing operations, entered at run time</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#statement -->
+    <owl:DatatypeProperty rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#statement">
+        <rdfs:domain rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_Lineage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>general explanation of the data producer’s knowledge about the lineage of a resource</rdfs:comment>
+    </owl:DatatypeProperty>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,218 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://geos.whu.edu.cn/ont/iso19115/lineage_prov.owl#"
+     xml:base="http://geos.whu.edu.cn/ont/iso19115/lineage_prov.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:core="http://purl.org/vocab/frbr/core#"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:basic="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage_prov.owl">   
+        <dc:title>An OWL ontology mapping ISO 19115 lineage related concepts to PROV-O concepts</dc:title>		
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liangcun Jiang</dc:creator>		
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peng Yue</dc:creator>
+        <dct:created>2015-07-14</dct:created>
+        <dct:modified>2017-03-27</dct:modified>
+				<owl:imports rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/prov-o-20130430"/>
+        <owl:imports rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#algorithm -->
+
+    <rdf:Description rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#algorithm">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#entity"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#output -->
+
+    <rdf:Description rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#output">
+				<rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#generated"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#processingInformation -->
+
+    <rdf:Description rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#processingInformation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#qualifiedUsage"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#processor -->
+
+    <rdf:Description rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#processor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#qualifiedAssociation"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#report -->
+
+    <rdf:Description rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#report">
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#source -->
+
+    <rdf:Description rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#source">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#used"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#sourceStep -->
+
+    <rdf:Description rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#sourceStep">
+		    <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.w3.org/ns/prov#used"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+    </rdf:Description>
+
+
+    <!-- http://geos.whu.edu.cn/ont/iso19115/metadata.owl#party -->
+
+    <rdf:Description rdf:about="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#party">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#agent"/>
+    </rdf:Description>
+    
+
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_Algorithm -->
+
+    <rdf:Description rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_Algorithm">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_ProcessStepReport -->
+
+    <rdf:Description rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_ProcessStepReport">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_Processing -->
+
+    <rdf:Description rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_Processing">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_Lineage -->
+
+    <rdf:Description rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_Lineage">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Bundle"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_ProcessStep -->
+
+    <rdf:Description rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_ProcessStep">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_Source -->
+
+    <rdf:Description rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LI_Source">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage_prov.owl#SpatialDerivation -->
+
+    <owl:Class rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage_prov.owl#SpatialDerivation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Derivation"/>
+        <rdfs:comment>A SpatialDerivation is defined to indicate the spatial derivation type about the binary prov:wasDerivedFrom relation through the attribute prov:type.</rdfs:comment>
+        <rdfs:label>SpatialDerivation</rdfs:label>
+        <prov:definition>A SpatialDerivation is a particular case of derivation that influences an entity from the spatial aspect.</prov:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage_prov.owl#ThematicDerivation -->
+
+    <owl:Class rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage_prov.owl#ThematicDerivation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Derivation"/>
+        <rdfs:comment>A ThematicDerivation is defined to indicate the subject derivation type about the binary prov:wasDerivedFrom relation through the attribute prov:type.</rdfs:comment>
+        <rdfs:label>ThematicDerivation</rdfs:label>
+        <prov:definition>A ThematicDerivation is a particular case of derivation that influences an entity from the thematic aspect.</prov:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://geos.whu.edu.cn/ont/iso19115/lineage_prov.owl#TemporalDerivation -->
+
+    <owl:Class rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage_prov.owl#TemporalDerivation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Derivation"/>
+        <rdfs:comment>A TemporalDerivation is defined to indicate the temporal derivation type about the binary prov:wasDerivedFrom relation through the attribute prov:type.</rdfs:comment>
+        <rdfs:label>TemporalDerivation</rdfs:label>
+        <prov:definition>A TemporalDerivation is a particular case of derivation that influences an entity from the temporal aspect.</prov:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Party -->
+
+    <rdf:Description rdf:about="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Party">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Responsibility -->
+
+    <rdf:Description rdf:about="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Responsibility">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Association"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
