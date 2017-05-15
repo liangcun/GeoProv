@@ -118,9 +118,9 @@
         </li:source>
         <li:processor>
           <md:CI_Responsbility rdf:about="http://202.114.118.190:8099/lod/Processor78e5f4f8-5bae-4e17-aa07-6fca4a43e67d">
-					  <md:role rdf:resource="http://geos.whu.edu.cn/ont/iso19115/codelist/RoleCode.owl#processor"/>
-					  <md:party>
-						  <md:CI_Party rdf:about="http://202.114.118.190:8099/lod/Party80e5f4f8-4bae-5d17-ef07-6fca4a451b7a">
+            <md:role rdf:resource="http://geos.whu.edu.cn/ont/iso19115/codelist/RoleCode.owl#processor"/>
+            <md:party>
+              <md:CI_Party rdf:about="http://202.114.118.190:8099/lod/Party80e5f4f8-4bae-5d17-ef07-6fca4a451b7a">
                 <md:contactInfo>
                    <md:CI_Contact rdf:about="http://202.114.118.190:8099/lod/Contact8e2e8983-0120-4daa-beee-069de1a15b3f">
                     <md:hoursOfService>9:00 AM-17:00 PM Eastern</md:hoursOfService>
@@ -135,18 +135,18 @@
                       </md:CI_Address>
                     </md:address>
                     <md:phone>
-											<md:CI_Telephone>
-												<md:number>027-87662161</md:number>
-											</md:CI_Telephone>
-										</md:phone>
+                      <md:CI_Telephone>
+                        <md:number>027-87662161</md:number>
+                      </md:CI_Telephone>
+                    </md:phone>
                   </md:CI_Contact>
                 </md:contactInfo>
                 <md:positionName>Student</md:positionName>
                 <md:organisationName>Wuhan University</md:organisationName>
                 <md:individualName>Guo Xia</md:individualName>
                </md:CI_Party>
-						</md:party>
-					</md:CI_Responsbility>
+            </md:party>
+          </md:CI_Responsbility>
         </li:processor>
         <md:description>Calculate fields on PopTotal and PopBorn attributes for the result of spatial join. Population of one administrative region is divided by the number of regular cells appropriately within it</md:description>
         <li:stepDateTime>
