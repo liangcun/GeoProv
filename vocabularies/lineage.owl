@@ -12,16 +12,16 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
     <owl:Ontology rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage">
-				<dc:title>ISO lineage ontology</dc:title>
-				<dc:description>This document presents an OWL2 Web Ontology Language encoding of the lineage model specified in ISO 19115-1:2014</dc:description>
+        <dc:title>ISO lineage ontology</dc:title>
+        <dc:description>This document presents an OWL2 Web Ontology Language encoding of the lineage model specified in ISO 19115-1:2014</dc:description>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liangcun Jiang</dc:creator>
-				<dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peng Yue</dc:creator>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peng Yue</dc:creator>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xia Guo</dc:creator>   
         <dct:created>2015-07-14</dct:created>
         <dct:modified>2017-03-20</dct:modified>
         <owl:imports rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#"/>
-		</owl:Ontology>
-		<!-- 
+    </owl:Ontology>
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -369,7 +369,7 @@
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-				<rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Class>
@@ -613,7 +613,7 @@
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-				<rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <owl:Restriction>
@@ -630,8 +630,8 @@
             </owl:Class>
         </rdfs:subClassOf>
     </owl:Class>
-		
-		
+    
+    
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -818,7 +818,7 @@
         <rdfs:range rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#MD_Identifier"/>
     </rdf:Description>
     
-		
+    
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //

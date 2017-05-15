@@ -14,12 +14,12 @@
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage_prov.owl">   
-        <dc:title>An OWL ontology mapping ISO 19115 lineage related concepts to PROV-O concepts</dc:title>		
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liangcun Jiang</dc:creator>		
+        <dc:title>An OWL ontology mapping ISO 19115 lineage related concepts to PROV-O concepts</dc:title>    
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liangcun Jiang</dc:creator>    
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peng Yue</dc:creator>
         <dct:created>2015-07-14</dct:created>
         <dct:modified>2017-03-27</dct:modified>
-				<owl:imports rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl"/>
+        <owl:imports rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/prov-o-20130430"/>
         <owl:imports rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl"/>
     </owl:Ontology>
@@ -44,7 +44,7 @@
     <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#output -->
 
     <rdf:Description rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#output">
-				<rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#generated"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#generated"/>
         <rdfs:subPropertyOf>
             <rdf:Description>
                 <owl:inverseOf rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
@@ -93,7 +93,7 @@
     <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#sourceStep -->
 
     <rdf:Description rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#sourceStep">
-		    <rdfs:subPropertyOf>
+        <rdfs:subPropertyOf>
             <rdf:Description>
                 <owl:inverseOf rdf:resource="http://www.w3.org/ns/prov#used"/>
             </rdf:Description>
