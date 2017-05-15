@@ -1,0 +1,10 @@
+PREFIX : <http://202.114.118.190:8099/lod/>
+REFIX dex: <http://geos.whu.edu.cn/ont/ex/DataExplorationExample.owl#>
+PREFIX iso19108: <http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#>
+PREFIX li: <http://geos.whu.edu.cn/ont/iso19115/lineage.owl#>
+PREFIX li_prov: <http://geos.whu.edu.cn/ont/iso19115/lineage_prov.owl#>
+PREFIX md: <http://geos.whu.edu.cn/ont/iso19115/metadata.owl#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd:<http://www.w3.org/2000/10/XMLSchema#>
