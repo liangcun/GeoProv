@@ -33,7 +33,7 @@
             </md:referenceSystemIdentifier>
           </md:MD_ReferenceSystem>
         </li:sourceReferenceSystem>
-        <md:description>Result of spatial join between kindergarten points and spatial net</md:description>
+        <md:description>SpatialJoin result between kindergarten points and spatial net</md:description>
       </li:LE_Source>
     </li:lineageSource>
     <li:lineageSource>
@@ -73,7 +73,7 @@
           </md:MD_Scope>
         </li:scope>
         <li:sourceReferenceSystem rdf:resource="http://202.114.118.190:8099/lod/RS44b9feba-bd1b-4ad1-b6e7-34af2d340bcf"/>
-        <md:description>shapefile of Wuhan administrative region</md:description>
+        <md:description>demographic dataset</md:description>
       </li:LE_Source>
     </li:lineageSource>
     <li:processStep>
@@ -202,7 +202,7 @@
                 </md:referenceSystemIdentifier>
               </md:MD_ReferenceSystem>
             </li:sourceReferenceSystem>
-            <md:description>shapefile of Wuhan administrative region</md:description>
+            <md:description>shapefile of Wuhan administrative region (WGS1984)</md:description>
           </li:LE_Source>
         </li:source>
         <li:processor rdf:resource="http://202.114.118.190:8099/lod/Processor78e5f4f8-5bae-4e17-aa07-6fca4a43e67d"/>
