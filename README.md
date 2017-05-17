@@ -4,6 +4,9 @@ GeoProv
 
 *Keywords:* geospatial data provenance; lineage model; ISO 19115; W3C PROV
 
+Members & contributors:
+Liangcun Jiang
+
 Contents
 ----------------------
 - [`examples/`](examples): Usage exmaples of geospatial data provenance in RDF.
