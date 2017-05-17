@@ -1,4 +1,4 @@
-# SPARQL query to retrieve spatial and temporal information with ISO lineage syntax
+# SPARQL query for watercov use case to retrieve spatial and temporal information with ISO lineage syntax
 SELECT  ?executionTime ?algDescription ?source ?srcDescription ?extent ?referenceSystem
 WHERE {:Processd9f08184-8af3-471a-af35-0650a8b7f72d li:stepDateTime ?executionTime .
        :Processd9f08184-8af3-471a-af35-0650a8b7f72d li:processingInformation ?processingInfo .
