@@ -12,12 +12,11 @@ Contents
 
 Status
 ---------
-The example provenance data are also availabe at a ([SPARQL server](http://202.114.118.190:8099/fuseki/)) .
-http://202.114.118.190:8099/fuseki/govData/query
+- The example provenance data are also availabe at a ([SPARQL server](http://202.114.118.190:8099/fuseki/)). SPARQL queries can be executed in the corresponding endpoints.
 
 
 References
 ----------
--ISO/TC 211, 2014. ISO 19115-1:2014 Geographic information-Metadata-Part 1: Fundamentals. Geneva, Switzerland.
--Lebo, T., Sahoo, S., and McGuinness, D., 2013. PROV-O: The PROV Ontology [online]. W3C recommendation. Available from: https://www.w3.org/TR/2013/REC-prov-o-20130430/ [Accessed 17 Feb 2017].
+- ISO/TC 211, 2014. ISO 19115-1:2014 Geographic information-Metadata-Part 1: Fundamentals. Geneva, Switzerland.
+- Lebo, T., Sahoo, S., and McGuinness, D., 2013. PROV-O: The PROV Ontology [online]. W3C recommendation. Available from: https://www.w3.org/TR/2013/REC-prov-o-20130430/ [Accessed 17 Feb 2017].
 
