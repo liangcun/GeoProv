@@ -1,4 +1,4 @@
-# SPARQL query to select information at feature and attribute levels
+# SPARQL query for govdata use case to select information at feature and attribute levels
 SELECT ?feature ?region ?popBornValue ?kgNum ?source ?referceSystem
        ?sourceLevel ?processInfo 
 WHERE { ?feature dex:hasProperty ?popBornProperty .
