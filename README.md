@@ -12,7 +12,7 @@ Contents
 
 Status
 ---------
-- The example provenance data are also availabe at a ([SPARQL server](http://202.114.118.190:8099/fuseki/)). SPARQL queries can be executed in the corresponding endpoints.
+The example provenance data are also availabe at a ([SPARQL server](http://202.114.118.190:8099/fuseki/)). SPARQL queries can be executed in the corresponding endpoints.
 
 
 References
