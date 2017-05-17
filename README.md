@@ -5,7 +5,7 @@ GeoProv
 *Keywords:* geospatial data provenance; lineage model; ISO 19115; W3C PROV
 
 Members & contributors:
-Liangcun Jiang
+- ***
 
 Contents
 ----------------------
