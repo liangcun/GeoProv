@@ -1434,7 +1434,7 @@ EXAMPLE EPSG::4326</rdfs:comment>
     <!-- http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Individaul -->
 
     <owl:Class rdf:about="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Individaul">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <rdfs:subClassOf rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Party"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -1555,7 +1555,7 @@ EXAMPLE EPSG::4326</rdfs:comment>
     <!-- http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Organisation -->
 
     <owl:Class rdf:about="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Organisation">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Organization"/>
+        <rdfs:subClassOf rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Party"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -2483,18 +2483,7 @@ NOTE This is only an approximate reference so specifying the co-ordinate system 
         <rdfs:subClassOf rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#MD_Identifier"/>
         <rdfs:comment>identifier used for reference systems</rdfs:comment>
     </owl:Class>
-    
 
-
-    <!-- http://www.w3.org/ns/prov#Organization -->
-
-    <owl:Class rdf:about="http://www.w3.org/ns/prov#Organization"/>
-    
-
-
-    <!-- http://www.w3.org/ns/prov#Person -->
-
-    <owl:Class rdf:about="http://www.w3.org/ns/prov#Person"/>
 </rdf:RDF>
 
 
