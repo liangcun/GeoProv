@@ -204,7 +204,23 @@
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
     </rdf:Description>
     
+    <!-- http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Party -->
 
+    <rdf:Description rdf:about="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Party">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    </rdf:Description>
+
+    <!-- http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Individual -->
+
+    <rdf:Description rdf:about="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Individual">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Person"/>
+    </rdf:Description>
+
+    <!-- http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Organisation -->
+
+    <rdf:Description rdf:about="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Organisation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Organization"/>
+    </rdf:Description>
 
     <!-- http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Responsibility -->
 
