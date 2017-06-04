@@ -235,7 +235,7 @@ NOTE A geographic identifier as described in ISO 19112.</rdfs:comment>
 
     <owl:ObjectProperty rdf:about="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#individual">
         <rdfs:domain rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Organisation"/>
-        <rdfs:range rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Individaul"/>
+        <rdfs:range rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Individual"/>
         <rdfs:comment>an individual in the named organization</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -781,7 +781,7 @@ EXAMPLE EPSG::4326</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#individualName">
         <rdfs:subPropertyOf rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#name"/>
-        <rdfs:domain rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Individaul"/>
+        <rdfs:domain rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Individual"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>name of the responsible personsurname, given name, title separated by a delimiter</rdfs:comment>
     </owl:DatatypeProperty>
@@ -910,7 +910,7 @@ EXAMPLE EPSG::4326</rdfs:comment>
     <!-- http://geos.whu.edu.cn/ont/iso19115/metadata.owl#positionName -->
 
     <owl:DatatypeProperty rdf:about="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#positionName">
-        <rdfs:domain rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Individaul"/>
+        <rdfs:domain rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Individual"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>position of the individual in an organization</rdfs:comment>
     </owl:DatatypeProperty>
@@ -1431,9 +1431,9 @@ EXAMPLE EPSG::4326</rdfs:comment>
     
 
 
-    <!-- http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Individaul -->
+    <!-- http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Individual -->
 
-    <owl:Class rdf:about="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Individaul">
+    <owl:Class rdf:about="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Individual">
         <rdfs:subClassOf rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Party"/>
         <rdfs:subClassOf>
             <owl:Class>
@@ -1575,7 +1575,7 @@ EXAMPLE EPSG::4326</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#individual"/>
-                <owl:allValuesFrom rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Individaul"/>
+                <owl:allValuesFrom rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Individual"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1588,7 +1588,7 @@ EXAMPLE EPSG::4326</rdfs:comment>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#individual"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Individaul"/>
+                <owl:onClass rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#CI_Individual"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
