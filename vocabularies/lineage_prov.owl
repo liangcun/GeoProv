@@ -73,6 +73,7 @@
     <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#report -->
 
     <rdf:Description rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#report">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#generated"/>
         <rdfs:subPropertyOf>
             <rdf:Description>
                 <owl:inverseOf rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
