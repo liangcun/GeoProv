@@ -1,6 +1,6 @@
 GeoProv
 ========
-*Abstract:* This repository provides a mapping from ISO lineage terms [1] to the W3C PROV-O [2]. [Examples](examples) and [queries](queries) are given to demonstrate the mapping. The mapping ontology allows domain experts to use W3C PROV syntax to query and consume geospatial data provenance information encoded by the ISO lineage model, improving interoperability between ISO lineage and PROV applications.
+*Abstract:* This repository provides a mapping from ISO lineage terms [1] to the W3C PROV-O [2]. [Examples](examples) and [queries](queries) are given to demonstrate the mapping. The mapping ontology allows domain experts to use W3C PROV syntax to query and consume geospatial data provenance information encoded with the ISO lineage model, improving interoperability between ISO lineage and PROV applications.
 
 *Keywords:* geospatial data provenance; lineage model; ISO 19115; W3C PROV
 
