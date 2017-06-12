@@ -1,6 +1,6 @@
 GeoProv
 ========
-*Abstract:* This repository contains resources for the use of geospatial data provenance on the Web.
+*Abstract:* This repository provides a mapping from ISO lineage terms [1] to the W3C PROV-O [2]. ['Examples'] (examples) and ['queries'] (queries) are given to demonstrate the mapping.
 
 *Keywords:* geospatial data provenance; lineage model; ISO 19115; W3C PROV
 
@@ -20,6 +20,6 @@ The example provenance data are also availabe at a ([SPARQL server](http://202.1
 
 References
 ----------
-- ISO/TC 211, 2014. ISO 19115-1:2014 Geographic information-Metadata-Part 1: Fundamentals. Geneva, Switzerland.
-- Lebo, T., Sahoo, S., and McGuinness, D., 2013. PROV-O: The PROV Ontology [online]. W3C recommendation. Available from: https://www.w3.org/TR/2013/REC-prov-o-20130430/ [Accessed 17 Feb 2017].
+- [1] ISO/TC 211, 2014. ISO 19115-1:2014 Geographic information-Metadata-Part 1: Fundamentals. Geneva, Switzerland.
+- [2] Lebo, T., Sahoo, S., and McGuinness, D., 2013. PROV-O: The PROV Ontology [online]. W3C recommendation. Available from: https://www.w3.org/TR/2013/REC-prov-o-20130430/ [Accessed 17 Feb 2017].
 
