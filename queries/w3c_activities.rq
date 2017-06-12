@@ -1,0 +1,3 @@
+# SPARQL query to select process steps with W3C PROV syntax
+SELECT ?activities
+WHERE { ?activities a prov:Activity.}

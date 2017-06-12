@@ -1,0 +1,3 @@
+# SPARQL query to select attribution relations using W3C PROV syntax
+SELECT ?entity ?agent 
+WHERE { ?entity prov:wasAttributedTo ?agent .}

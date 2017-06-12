@@ -1,0 +1,3 @@
+# SPARQL query to select all the entities
+SELECT ?entities
+WHERE { ?entities a prov:Entity.}

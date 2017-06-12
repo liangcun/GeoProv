@@ -1,0 +1,3 @@
+# SPARQL query to select all the responsible parties with W3C PROV syntax
+SELECT ?agent
+WHERE { ?agent a prov:Agent.}

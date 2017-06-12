@@ -1,0 +1,3 @@
+# SPARQL query to select usage relations using W3C PROV syntax
+SELECT ?activity ?entity 
+WHERE { ?activity prov:used ?entity .}

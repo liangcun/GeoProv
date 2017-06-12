@@ -1,0 +1,3 @@
+# SPARQL query to select association relations using W3C PROV syntax
+SELECT ?activity ?agent 
+WHERE { ?activity prov:wasAssociatedWith ?agent .}
