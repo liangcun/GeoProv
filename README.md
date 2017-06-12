@@ -1,6 +1,6 @@
 GeoProv
 ========
-*Abstract:* This repository provides a mapping from ISO lineage terms [1] to the W3C PROV-O [2]. ['Examples'] (examples) and ['queries'] (queries) are given to demonstrate the mapping.
+*Abstract:* This repository provides a mapping from ISO lineage terms [1] to the W3C PROV-O [2]. ['Examples'](examples) and ['queries'](queries) are given to demonstrate the mapping.
 
 *Keywords:* geospatial data provenance; lineage model; ISO 19115; W3C PROV
 
@@ -9,7 +9,7 @@ Members & contributors:
 
 Contents
 ----------------------
-- [`examples`](examples): Usage exmaples of geospatial data provenance in RDF.
+- [`examples/`](examples): Usage exmaples of geospatial data provenance in RDF.
 - [`queries/`](queries): SPARQL queries run over example provenance triples.
 - [`vocabularies/`](vocabularies): OWL ontologies about ISO 19115 lineage model and its mapping to W3C PROV.
 
