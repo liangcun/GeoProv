@@ -1,6 +1,6 @@
 GeoProv
 ========
-*Abstract:* This repository provides a mapping from ISO lineage terms [1] to the W3C PROV-O [2]. ['Examples'](examples) and ['queries'](queries) are given to demonstrate the mapping.
+*Abstract:* This repository provides a mapping from ISO lineage terms [1] to the W3C PROV-O [2]. [Examples](examples) and [queries](queries) are given to demonstrate the mapping.
 
 *Keywords:* geospatial data provenance; lineage model; ISO 19115; W3C PROV
 
