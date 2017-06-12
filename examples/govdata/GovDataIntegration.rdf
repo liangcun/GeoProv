@@ -7,6 +7,19 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:md="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#">
   <li:LI_Lineage rdf:about="http://202.114.118.190:8099/lod/Lineage32e69ea8-2437-40c5-9334-2e6bb3bac920">
+    <md:contact>
+       <md:CI_Responsibility rdf:about="http://202.114.118.190:8099/lod/Processor78e5f4f8-5bae-4e17-aa07-6fca4a43e67d">
+            <md:role rdf:resource="http://geos.whu.edu.cn/ont/iso19115/codelist/RoleCode.owl#processor"/>
+            <md:party>
+               <md:CI_Party rdf:about="http://202.114.118.190:8099/lod/Party80e5f4f8-4bae-5d17-ef07-6fca4a451b7a"/>
+            </md:party>
+          </md:CI_Responsibility>
+    </md:contact>
+    <md:dateInfo>
+      <md:CI_Date>
+        <md:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-09-10T15:21:00</md:date>
+      </md:CI_Date>
+    </md:dateInfo>
     <li:statement>Lineage about process steps on data provided by Wuhan government for further analysis.</li:statement>
     <li:lineageSource rdf:resource="http://202.114.118.190:8099/lod/Source1ac4f543-a44e-4283-8427-1a2cdb7ef222"/>
     <li:lineageSource rdf:resource="http://202.114.118.190:8099/lod/Sourcedfebf956-526a-4788-abcf-bc7033a06c15"/>

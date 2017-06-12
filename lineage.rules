@@ -1,0 +1,12 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+@prefix li: <http://geos.whu.edu.cn/ont/iso19115/lineage.owl#>
+@prefix md: <http://geos.whu.edu.cn/ont/iso19115/metadata.owl#>
+@prefix prov: <http://www.w3.org/ns/prov#>
+
+[subClassRules:(?x rdf:type ?y)(?y rdfs:subClassOf ?z)->(?x rdf:type ?z)]
+[subPropertyRules:(?s ?p1 ?o)(?p1 rdfs:subPropertyOf ?p2)->(?s ?p2 ?o)]
+[derivationRules:(?s li:source ?o1)(?s li:output ?o2)->(?o2 prov:wasDerivedFrom ?o1)]
+[attributionRules:(?p li:output ?s)(?p li:processor ?responsibility)(?responsibility md:party ?party)->(?s prov:wasAttributedTo ?party)]
+[associationRules:(?p li:processor ?responsibility)(?responsibility md:party ?party)->(?p prov:wasAssociatedWith ?party)]
+[contactRules:(?bundle md:contact ?responsibility)(?responsibility md:party ?party)->(?bundle prov:wasAttributedTo ?party)]

@@ -109,6 +109,11 @@
     </rdf:Description>
     
 
+    <!-- http://geos.whu.edu.cn/ont/iso19115/metadata.owl#contact -->
+
+    <rdf:Description rdf:about="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#contact">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#qualifiedAttribution"/>
+    </rdf:Description>
 
 
     <!-- 
