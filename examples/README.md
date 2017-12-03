@@ -14,7 +14,7 @@ Content
 ----------------------
 The following figures present graphical illustrations of the provenance information in the two use cases.
  - #### govdata use case    
-   ![govdata illustration](govdata/graphical_illustration_of_provenance.png "govdata illustration")
+   ![govdata illustration](govdata/provenance_illustration_of_govdata.png "govdata illustration")
  -  #### watercov use case    
-   ![watercov illustration](watercov/provenance_illustration.png "watercov illustration")
+   ![watercov illustration](watercov/provenance_illustration_of_watercov.png "watercov illustration")
 
