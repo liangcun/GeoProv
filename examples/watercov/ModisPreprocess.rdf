@@ -9,12 +9,12 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:unit="http://data.nasa.gov/qudt/owl/unit#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
-  <li:LI_Lineage rdf:about="http://202.114.118.190:8099/lod/Lineage0655cda9-f82d-47e7-ac86-f624718c822c">
+  <li:LI_Lineage rdf:about="http://geos.whu.edu.cn:8099/resource/Lineage0655cda9-f82d-47e7-ac86-f624718c822c">
     <md:contact>
-       <md:CI_Responsibility rdf:about="http://202.114.118.190:8099/lod/Processor78e5f4f8-5bae-4e17-aa07-6fca4a43e67d">
+       <md:CI_Responsibility rdf:about="http://geos.whu.edu.cn:8099/resource/Processor78e5f4f8-5bae-4e17-aa07-6fca4a43e67d">
             <md:role rdf:resource="http://geos.whu.edu.cn/ont/iso19115/codelist/RoleCode.owl#processor"/>
             <md:party>
-               <md:CI_Party rdf:about="http://202.114.118.190:8099/lod/Party80e5f4f8-4bae-5d17-ef07-6fca4a451b7a"/>
+               <md:CI_Party rdf:about="http://geos.whu.edu.cn:8099/resource/Party80e5f4f8-4bae-5d17-ef07-6fca4a451b7a"/>
             </md:party>
           </md:CI_Responsibility>
     </md:contact>
@@ -24,17 +24,17 @@
        </md:CI_Date>
     </md:dateInfo>
     <li:lineageSource>
-      <rdf:Description rdf:about="http://202.114.118.190:8099/lod/MODIS505f68f4-a8c7-4823-bad5-8672c02cc0ab">
+      <rdf:Description rdf:about="http://geos.whu.edu.cn:8099/resource/MODIS505f68f4-a8c7-4823-bad5-8672c02cc0ab">
         <prov:wasDerivedFrom>
-          <li:LE_Source rdf:about="http://202.114.118.190:8099/lod/MODISbb39c5b9-c4e5-48f9-9d37-4347423b7ff1">
+          <li:LE_Source rdf:about="http://geos.whu.edu.cn:8099/resource/MODISbb39c5b9-c4e5-48f9-9d37-4347423b7ff1">
             <li:scope>
               <md:MD_Scope>
                 <md:extent>
-                  <md:EX_Extent rdf:about="http://202.114.118.190:8099/lod/Extent64a17166-ea36-4c4e-9c03-37cc438be9bd">
+                  <md:EX_Extent rdf:about="http://geos.whu.edu.cn:8099/resource/Extent64a17166-ea36-4c4e-9c03-37cc438be9bd">
                     <md:temporalElement>
                       <md:EX_TemporalExtent>
                         <md:extent>
-                          <iso19108:Period rdf:about="http://202.114.118.190:8099/lod/Time975fcd62-0c46-4a8e-8b73-04b97f3c320b">
+                          <iso19108:Period rdf:about="http://geos.whu.edu.cn:8099/resource/Time975fcd62-0c46-4a8e-8b73-04b97f3c320b">
                             <iso19108:end>
                               <iso19108:Instant>
                                 <iso19108:dateTimePosition rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-06-25T03:45:00</iso19108:dateTimePosition>
@@ -65,7 +65,7 @@
               </md:MD_Scope>
             </li:scope>
             <li:sourceSpatialResolution>
-              <md:MD_Resolution rdf:about="http://202.114.118.190:8099/lod/Resolution_500M_MOD09A1">
+              <md:MD_Resolution rdf:about="http://geos.whu.edu.cn:8099/resource/Resolution_500M_MOD09A1">
                 <md:distance>
                   <iso19103:Distance>
                     <iso19103:value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">500</iso19103:value>
@@ -75,7 +75,7 @@
               </md:MD_Resolution>
             </li:sourceSpatialResolution>
             <li:sourceReferenceSystem>
-              <md:MD_ReferenceSystem rdf:about="http://202.114.118.190:8099/lod/RS08f3199b-635b-4a89-8721-90f46ad09769">
+              <md:MD_ReferenceSystem rdf:about="http://geos.whu.edu.cn:8099/resource/RS08f3199b-635b-4a89-8721-90f46ad09769">
                 <md:referenceSystemIdentifier>
                   <md:RS_Identifier>
                     <md:code>Sphere_Sinusoidal</md:code>
@@ -84,10 +84,10 @@
               </md:MD_ReferenceSystem>
             </li:sourceReferenceSystem>
             <li:sourceCitation>
-              <md:CI_Citation rdf:about="http://202.114.118.190:8099/lod/Citation_MOD09A1.A2010169.h28v06.005.2010178113848">
+              <md:CI_Citation rdf:about="http://geos.whu.edu.cn:8099/resource/Citation_MOD09A1.A2010169.h28v06.005.2010178113848">
                  <md:title>MOD09A1.A2010169.h28v06.005.2010178113848.hdf</md:title>
                  <md:onlineResource>
-                   <md:CI_OnlineResource rdf:about="http://202.114.118.190:8099/lod/OnLineResource_MOD09A1.A2010169.h28v06.005.2010178113848">
+                   <md:CI_OnlineResource rdf:about="http://geos.whu.edu.cn:8099/resource/OnLineResource_MOD09A1.A2010169.h28v06.005.2010178113848">
                      <md:linkage>202.114.118.190:8099/data/wf/MOD09A1.A2010169.h28v06.005.2010178113848.hdf</md:linkage>
                      <md:function rdf:resource="http://geos.whu.edu.cn/ont/iso19115/codelist/OnLineFunctionCode.owl#fileAcces"/>
                    </md:CI_OnlineResource>
@@ -100,15 +100,15 @@
       </rdf:Description>
     </li:lineageSource>
     <li:lineageSource>
-      <rdf:Description rdf:about="http://202.114.118.190:8099/lod/MODIScb998e00-baf0-4594-bad2-5258bc4eb71f">
-        <prov:wasDerivedFrom rdf:resource="http://202.114.118.190:8099/lod/MODISbb39c5b9-c4e5-48f9-9d37-4347423b7ff1"/>
+      <rdf:Description rdf:about="http://geos.whu.edu.cn:8099/resource/MODIScb998e00-baf0-4594-bad2-5258bc4eb71f">
+        <prov:wasDerivedFrom rdf:resource="http://geos.whu.edu.cn:8099/resource/MODISbb39c5b9-c4e5-48f9-9d37-4347423b7ff1"/>
       </rdf:Description>
     </li:lineageSource>
-    <li:lineageSource rdf:resource="http://202.114.118.190:8099/lod/MODISbb39c5b9-c4e5-48f9-9d37-4347423b7ff1"/>
+    <li:lineageSource rdf:resource="http://geos.whu.edu.cn:8099/resource/MODISbb39c5b9-c4e5-48f9-9d37-4347423b7ff1"/>
     <li:processStep>
-      <li:LE_ProcessStep rdf:about="http://202.114.118.190:8099/lod/Process5d61f53f-66bc-4f39-a53f-e62c816bc3e6">
+      <li:LE_ProcessStep rdf:about="http://geos.whu.edu.cn:8099/resource/Process5d61f53f-66bc-4f39-a53f-e62c816bc3e6">
         <li:processingInformation>
-          <li:LE_Processing rdf:about="http://202.114.118.190:8099/lod/ProcessingInfo885ca263-f825-45e9-a9a2-9fc3aba41c07">
+          <li:LE_Processing rdf:about="http://geos.whu.edu.cn:8099/resource/ProcessingInfo885ca263-f825-45e9-a9a2-9fc3aba41c07">
             <li:procedureDescription>The pre-process operations include image clip, pre-projection and MODIS bands extraction </li:procedureDescription>
             <li:softwareReference>
               <md:CI_Citation>
@@ -122,12 +122,12 @@
             </li:identifier>
           </li:LE_Processing>
         </li:processingInformation>
-        <li:output rdf:resource="http://202.114.118.190:8099/lod/MODIS505f68f4-a8c7-4823-bad5-8672c02cc0ab"/>
-        <li:output rdf:resource="http://202.114.118.190:8099/lod/MODIScb998e00-baf0-4594-bad2-5258bc4eb71f"/>
-        <li:source rdf:resource="http://202.114.118.190:8099/lod/MODISbb39c5b9-c4e5-48f9-9d37-4347423b7ff1"/>
+        <li:output rdf:resource="http://geos.whu.edu.cn:8099/resource/MODIS505f68f4-a8c7-4823-bad5-8672c02cc0ab"/>
+        <li:output rdf:resource="http://geos.whu.edu.cn:8099/resource/MODIScb998e00-baf0-4594-bad2-5258bc4eb71f"/>
+        <li:source rdf:resource="http://geos.whu.edu.cn:8099/resource/MODISbb39c5b9-c4e5-48f9-9d37-4347423b7ff1"/>
         <md:description>MODIS pre-process in ArcGIS</md:description>
         <li:stepDateTime>
-          <iso19108:Period rdf:about="http://202.114.118.190:8099/lod/Period_MOD09A1_PreProcess">
+          <iso19108:Period rdf:about="http://geos.whu.edu.cn:8099/resource/Period_MOD09A1_PreProcess">
             <iso19108:end>
               <iso19108:Instant>
                 <iso19108:dateTimePosition rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"

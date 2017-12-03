@@ -6,12 +6,12 @@
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:md="http://geos.whu.edu.cn/ont/iso19115/metadata.owl#">
-  <li:LI_Lineage rdf:about="http://202.114.118.190:8099/lod/Lineage32e69ea8-2437-40c5-9334-2e6bb3bac920">
+  <li:LI_Lineage rdf:about="http://geos.whu.edu.cn:8099/resource/Lineage32e69ea8-2437-40c5-9334-2e6bb3bac920">
     <md:contact>
-       <md:CI_Responsibility rdf:about="http://202.114.118.190:8099/lod/Processor78e5f4f8-5bae-4e17-aa07-6fca4a43e67d">
+       <md:CI_Responsibility rdf:about="http://geos.whu.edu.cn:8099/resource/Processor78e5f4f8-5bae-4e17-aa07-6fca4a43e67d">
             <md:role rdf:resource="http://geos.whu.edu.cn/ont/iso19115/codelist/RoleCode.owl#processor"/>
             <md:party>
-               <md:CI_Party rdf:about="http://202.114.118.190:8099/lod/Party80e5f4f8-4bae-5d17-ef07-6fca4a451b7a"/>
+               <md:CI_Party rdf:about="http://geos.whu.edu.cn:8099/resource/Party80e5f4f8-4bae-5d17-ef07-6fca4a451b7a"/>
             </md:party>
           </md:CI_Responsibility>
     </md:contact>
@@ -21,11 +21,11 @@
       </md:CI_Date>
     </md:dateInfo>
     <li:statement>Lineage about process steps on data provided by Wuhan government for further analysis.</li:statement>
-    <li:lineageSource rdf:resource="http://202.114.118.190:8099/lod/Source1ac4f543-a44e-4283-8427-1a2cdb7ef222"/>
-    <li:lineageSource rdf:resource="http://202.114.118.190:8099/lod/Sourcedfebf956-526a-4788-abcf-bc7033a06c15"/>
-    <li:lineageSource rdf:resource="http://202.114.118.190:8099/lod/Source3bc3b26b-2ac0-4847-924f-7fba4530ec81"/>
+    <li:lineageSource rdf:resource="http://geos.whu.edu.cn:8099/resource/Source1ac4f543-a44e-4283-8427-1a2cdb7ef222"/>
+    <li:lineageSource rdf:resource="http://geos.whu.edu.cn:8099/resource/Sourcedfebf956-526a-4788-abcf-bc7033a06c15"/>
+    <li:lineageSource rdf:resource="http://geos.whu.edu.cn:8099/resource/Source3bc3b26b-2ac0-4847-924f-7fba4530ec81"/>
     <li:lineageSource>
-      <li:LE_Source rdf:about="http://202.114.118.190:8099/lod/Source3a2a387b-076a-48e9-b6fa-c4795d3fe581">
+      <li:LE_Source rdf:about="http://geos.whu.edu.cn:8099/resource/Source3a2a387b-076a-48e9-b6fa-c4795d3fe581">
         <li:scope>
           <md:MD_Scope>
             <md:levelDescription>
@@ -38,7 +38,7 @@
           </md:MD_Scope>
         </li:scope>
         <li:sourceReferenceSystem>
-          <md:MD_ReferenceSystem rdf:about="http://202.114.118.190:8099/lod/RS44b9feba-bd1b-4ad1-b6e7-34af2d340bcf">
+          <md:MD_ReferenceSystem rdf:about="http://geos.whu.edu.cn:8099/resource/RS44b9feba-bd1b-4ad1-b6e7-34af2d340bcf">
             <md:referenceSystemIdentifier>
               <md:RS_Identifier>
                 <md:code>GCS_Beijing_1954</md:code>
@@ -50,7 +50,7 @@
       </li:LE_Source>
     </li:lineageSource>
     <li:lineageSource>
-      <li:LE_Source rdf:about="http://202.114.118.190:8099/lod/Sourceaee5dbb7-c7f6-4232-92b4-2eccb85864df">
+      <li:LE_Source rdf:about="http://geos.whu.edu.cn:8099/resource/Sourceaee5dbb7-c7f6-4232-92b4-2eccb85864df">
         <li:scope>
           <md:MD_Scope>
             <md:levelDescription>
@@ -62,18 +62,18 @@
             <md:level rdf:resource="http://geos.whu.edu.cn/ont/iso19115.owl#dataset"/>
           </md:MD_Scope>
         </li:scope>
-        <li:sourceReferenceSystem rdf:resource="http://202.114.118.190:8099/lod/RS44b9feba-bd1b-4ad1-b6e7-34af2d340bcf"/>
+        <li:sourceReferenceSystem rdf:resource="http://geos.whu.edu.cn:8099/resource/RS44b9feba-bd1b-4ad1-b6e7-34af2d340bcf"/>
         <md:description>shapefile of kindergarten in point type</md:description>
       </li:LE_Source>
     </li:lineageSource>
     <li:lineageSource>
-      <li:LE_Source rdf:about="http://202.114.118.190:8099/lod/Source85855ff6-b02a-4db5-93dc-2b0dfb18cd96">
-        <li:sourceReferenceSystem rdf:resource="http://202.114.118.190:8099/lod/RS44b9feba-bd1b-4ad1-b6e7-34af2d340bcf"/>
+      <li:LE_Source rdf:about="http://geos.whu.edu.cn:8099/resource/Source85855ff6-b02a-4db5-93dc-2b0dfb18cd96">
+        <li:sourceReferenceSystem rdf:resource="http://geos.whu.edu.cn:8099/resource/RS44b9feba-bd1b-4ad1-b6e7-34af2d340bcf"/>
         <md:description>shapefile of spatial net for Wuhan administrative region</md:description>
       </li:LE_Source>
     </li:lineageSource>
     <li:lineageSource>
-      <li:LE_Source rdf:about="http://202.114.118.190:8099/lod/Sourcee580b9e0-a101-4705-b43d-fb2da4fea17f">
+      <li:LE_Source rdf:about="http://geos.whu.edu.cn:8099/resource/Sourcee580b9e0-a101-4705-b43d-fb2da4fea17f">
         <li:scope>
           <md:MD_Scope>
             <md:levelDescription>
@@ -85,14 +85,14 @@
             <md:level rdf:resource="http://geos.whu.edu.cn/ont/iso19115.owl#dataset"/>
           </md:MD_Scope>
         </li:scope>
-        <li:sourceReferenceSystem rdf:resource="http://202.114.118.190:8099/lod/RS44b9feba-bd1b-4ad1-b6e7-34af2d340bcf"/>
+        <li:sourceReferenceSystem rdf:resource="http://geos.whu.edu.cn:8099/resource/RS44b9feba-bd1b-4ad1-b6e7-34af2d340bcf"/>
         <md:description>demographic dataset</md:description>
       </li:LE_Source>
     </li:lineageSource>
     <li:processStep>
-      <li:LE_ProcessStep rdf:about="http://202.114.118.190:8099/lod/Process9712c004-8b00-4969-94b3-b62744ae8911">
+      <li:LE_ProcessStep rdf:about="http://geos.whu.edu.cn:8099/resource/Process9712c004-8b00-4969-94b3-b62744ae8911">
         <li:processingInformation>
-          <li:LE_Processing rdf:about="http://202.114.118.190:8099/lod/ProcessingInfo45b28dc4-5452-49ab-8a74-b6458c9182a0">
+          <li:LE_Processing rdf:about="http://geos.whu.edu.cn:8099/resource/ProcessingInfo45b28dc4-5452-49ab-8a74-b6458c9182a0">
             <li:procedureDescription>Use tool 'Calculate Field' under Data Management Tools: Calculates the values of a field for a feature class.</li:procedureDescription>
             <li:softwareReference>
               <md:CI_Citation>
@@ -107,7 +107,7 @@
           </li:LE_Processing>
         </li:processingInformation>
         <li:output>
-          <li:LE_Source rdf:about="http://202.114.118.190:8099/lod/Source3bc3b26b-2ac0-4847-924f-7fba4530ec81">
+          <li:LE_Source rdf:about="http://geos.whu.edu.cn:8099/resource/Source3bc3b26b-2ac0-4847-924f-7fba4530ec81">
             <li:scope>
               <md:MD_Scope>
                 <md:levelDescription>
@@ -119,23 +119,23 @@
                 <md:level rdf:resource="http://geos.whu.edu.cn/ont/iso19115.owl#dataset"/>
               </md:MD_Scope>
             </li:scope>
-            <li:sourceReferenceSystem rdf:resource="http://202.114.118.190:8099/lod/RS44b9feba-bd1b-4ad1-b6e7-34af2d340bcf"/>
+            <li:sourceReferenceSystem rdf:resource="http://geos.whu.edu.cn:8099/resource/RS44b9feba-bd1b-4ad1-b6e7-34af2d340bcf"/>
             <md:description>shapefile of spatial net with population information</md:description>
           </li:LE_Source>
         </li:output>
         <li:source>
-          <li:LE_Source rdf:about="http://202.114.118.190:8099/lod/Sourcedfebf956-526a-4788-abcf-bc7033a06c15">
-            <li:sourceReferenceSystem rdf:resource="http://202.114.118.190:8099/lod/RS44b9feba-bd1b-4ad1-b6e7-34af2d340bcf"/>
+          <li:LE_Source rdf:about="http://geos.whu.edu.cn:8099/resource/Sourcedfebf956-526a-4788-abcf-bc7033a06c15">
+            <li:sourceReferenceSystem rdf:resource="http://geos.whu.edu.cn:8099/resource/RS44b9feba-bd1b-4ad1-b6e7-34af2d340bcf"/>
             <md:description>Result of spatial join between Wuhan administrative region and spatial net</md:description>
           </li:LE_Source>
         </li:source>
         <li:processor>
-          <md:CI_Responsbility rdf:about="http://202.114.118.190:8099/lod/Processor78e5f4f8-5bae-4e17-aa07-6fca4a43e67d">
+          <md:CI_Responsbility rdf:about="http://geos.whu.edu.cn:8099/resource/Processor78e5f4f8-5bae-4e17-aa07-6fca4a43e67d">
             <md:role rdf:resource="http://geos.whu.edu.cn/ont/iso19115/codelist/RoleCode.owl#processor"/>
             <md:party>
-              <md:CI_Party rdf:about="http://202.114.118.190:8099/lod/Party80e5f4f8-4bae-5d17-ef07-6fca4a451b7a">
+              <md:CI_Party rdf:about="http://geos.whu.edu.cn:8099/resource/Party80e5f4f8-4bae-5d17-ef07-6fca4a451b7a">
                 <md:contactInfo>
-                   <md:CI_Contact rdf:about="http://202.114.118.190:8099/lod/Contact8e2e8983-0120-4daa-beee-069de1a15b3f">
+                   <md:CI_Contact rdf:about="http://geos.whu.edu.cn:8099/resource/Contact8e2e8983-0120-4daa-beee-069de1a15b3f">
                     <md:hoursOfService>9:00 AM-17:00 PM Eastern</md:hoursOfService>
                     <md:address>
                       <md:CI_Address>
@@ -175,9 +175,9 @@
       </li:LE_ProcessStep>
     </li:processStep>
     <li:processStep>
-      <li:LE_ProcessStep rdf:about="http://202.114.118.190:8099/lod/Process023f4377-d52d-434e-87a6-bf441be8763d">
+      <li:LE_ProcessStep rdf:about="http://geos.whu.edu.cn:8099/resource/Process023f4377-d52d-434e-87a6-bf441be8763d">
         <li:processingInformation>
-          <li:LE_Processing rdf:about="http://202.114.118.190:8099/lod/ProcessingInfoc9c4d649-a4b4-44b0-ac14-9c2b14ca0060">
+          <li:LE_Processing rdf:about="http://geos.whu.edu.cn:8099/resource/ProcessingInfoc9c4d649-a4b4-44b0-ac14-9c2b14ca0060">
             <li:runTimeParameters>Output Coordinate System, GCS_Beijing_1954; Geographic Transformation(optional),Beijing_1954_To_WGS_1984_1</li:runTimeParameters>
             <li:procedureDescription>Use tool 'Project' under Data Management Tools: Project spatial data from one coordinate system to another.</li:procedureDescription>
             <li:softwareReference>
@@ -192,9 +192,9 @@
             </li:identifier>
           </li:LE_Processing>
         </li:processingInformation>
-        <li:output rdf:resource="http://202.114.118.190:8099/lod/Sourcee580b9e0-a101-4705-b43d-fb2da4fea17f"/>
+        <li:output rdf:resource="http://geos.whu.edu.cn:8099/resource/Sourcee580b9e0-a101-4705-b43d-fb2da4fea17f"/>
         <li:source>
-          <li:LE_Source rdf:about="http://202.114.118.190:8099/lod/Source1ac4f543-a44e-4283-8427-1a2cdb7ef222">
+          <li:LE_Source rdf:about="http://geos.whu.edu.cn:8099/resource/Source1ac4f543-a44e-4283-8427-1a2cdb7ef222">
             <li:scope>
               <md:MD_Scope>
                 <md:levelDescription>
@@ -207,7 +207,7 @@
               </md:MD_Scope>
             </li:scope>
             <li:sourceReferenceSystem>
-              <md:MD_ReferenceSystem rdf:about="http://202.114.118.190:8099/lod/RS84c6e62c-d370-4818-b0c6-a7a458f87e6b">
+              <md:MD_ReferenceSystem rdf:about="http://geos.whu.edu.cn:8099/resource/RS84c6e62c-d370-4818-b0c6-a7a458f87e6b">
                 <md:referenceSystemIdentifier>
                   <md:RS_Identifier>
                     <md:code>WGS_1984_UTM_Zone_49N</md:code>
@@ -218,7 +218,7 @@
             <md:description>shapefile of Wuhan administrative region (WGS1984)</md:description>
           </li:LE_Source>
         </li:source>
-        <li:processor rdf:resource="http://202.114.118.190:8099/lod/Processor78e5f4f8-5bae-4e17-aa07-6fca4a43e67d"/>
+        <li:processor rdf:resource="http://geos.whu.edu.cn:8099/resource/Processor78e5f4f8-5bae-4e17-aa07-6fca4a43e67d"/>
         <md:description>Transform coordinate system</md:description>
         <li:stepDateTime>
           <iso19108:Period>
@@ -233,9 +233,9 @@
       </li:LE_ProcessStep>
     </li:processStep>
     <li:processStep>
-      <li:LE_ProcessStep rdf:about="http://202.114.118.190:8099/lod/Process5e9b85e0-a3cd-4120-8aa7-730d4b401912">
+      <li:LE_ProcessStep rdf:about="http://geos.whu.edu.cn:8099/resource/Process5e9b85e0-a3cd-4120-8aa7-730d4b401912">
         <li:processingInformation>
-          <li:LE_Processing rdf:about="http://202.114.118.190:8099/lod/ProcessingInfo2fff6704-84f1-4d86-8fd5-ca29ba72fe89">
+          <li:LE_Processing rdf:about="http://geos.whu.edu.cn:8099/resource/ProcessingInfo2fff6704-84f1-4d86-8fd5-ca29ba72fe89">
             <li:runTimeParameters>Join Operation(optional), JOIN_ONE_TO_ONE; Match Option(optional), CONTAINS</li:runTimeParameters>
             <li:procedureDescription>Use tool 'Spatial Join' under Analysis Tools: Joins attributes from one feature to another based on the spatial relationship.</li:procedureDescription>
             <li:softwareReference>
@@ -250,10 +250,10 @@
             </li:identifier>
           </li:LE_Processing>
         </li:processingInformation>
-        <li:output rdf:resource="http://202.114.118.190:8099/lod/Source3a2a387b-076a-48e9-b6fa-c4795d3fe581"/>
-        <li:source rdf:resource="http://202.114.118.190:8099/lod/Sourceaee5dbb7-c7f6-4232-92b4-2eccb85864df"/>
-        <li:source rdf:resource="http://202.114.118.190:8099/lod/Source3bc3b26b-2ac0-4847-924f-7fba4530ec81"/>
-        <li:processor rdf:resource="http://202.114.118.190:8099/lod/Processor78e5f4f8-5bae-4e17-aa07-6fca4a43e67d"/>
+        <li:output rdf:resource="http://geos.whu.edu.cn:8099/resource/Source3a2a387b-076a-48e9-b6fa-c4795d3fe581"/>
+        <li:source rdf:resource="http://geos.whu.edu.cn:8099/resource/Sourceaee5dbb7-c7f6-4232-92b4-2eccb85864df"/>
+        <li:source rdf:resource="http://geos.whu.edu.cn:8099/resource/Source3bc3b26b-2ac0-4847-924f-7fba4530ec81"/>
+        <li:processor rdf:resource="http://geos.whu.edu.cn:8099/resource/Processor78e5f4f8-5bae-4e17-aa07-6fca4a43e67d"/>
         <md:description>Join kindergarten points with spatial net</md:description>
         <li:stepDateTime>
           <iso19108:Period>
@@ -268,9 +268,9 @@
       </li:LE_ProcessStep>
     </li:processStep>
     <li:processStep>
-      <li:LE_ProcessStep rdf:about="http://202.114.118.190:8099/lod/Processcc11ca4f-7f77-41da-ac29-ed4893debb40">
+      <li:LE_ProcessStep rdf:about="http://geos.whu.edu.cn:8099/resource/Processcc11ca4f-7f77-41da-ac29-ed4893debb40">
         <li:processingInformation>
-          <li:LE_Processing rdf:about="http://202.114.118.190:8099/lod/ProcessingInfoacea9e0a-fda1-4041-9f3a-9e78f76a81b9">
+          <li:LE_Processing rdf:about="http://geos.whu.edu.cn:8099/resource/ProcessingInfoacea9e0a-fda1-4041-9f3a-9e78f76a81b9">
             <li:runTimeParameters>Number of Rows, 20; Number of Columns, 20</li:runTimeParameters>
             <li:procedureDescription>Use tool 'Create Fishnet' under Data Management Tools: Creates a fishnet of rectangular cells.</li:procedureDescription>
             <li:softwareReference>
@@ -285,8 +285,8 @@
             </li:identifier>
           </li:LE_Processing>
         </li:processingInformation>
-        <li:output rdf:resource="http://202.114.118.190:8099/lod/Source85855ff6-b02a-4db5-93dc-2b0dfb18cd96"/>
-        <li:processor rdf:resource="http://202.114.118.190:8099/lod/Processor78e5f4f8-5bae-4e17-aa07-6fca4a43e67d"/>
+        <li:output rdf:resource="http://geos.whu.edu.cn:8099/resource/Source85855ff6-b02a-4db5-93dc-2b0dfb18cd96"/>
+        <li:processor rdf:resource="http://geos.whu.edu.cn:8099/resource/Processor78e5f4f8-5bae-4e17-aa07-6fca4a43e67d"/>
         <md:description>Create fishnet for the administrative region of Wuhan</md:description>
         <li:stepDateTime>
           <iso19108:Period>
@@ -301,9 +301,9 @@
       </li:LE_ProcessStep>
     </li:processStep>
     <li:processStep>
-      <li:LE_ProcessStep rdf:about="http://202.114.118.190:8099/lod/Process58679f1c-6b07-4201-b790-c638ac6da6f0">
+      <li:LE_ProcessStep rdf:about="http://geos.whu.edu.cn:8099/resource/Process58679f1c-6b07-4201-b790-c638ac6da6f0">
         <li:processingInformation>
-          <li:LE_Processing rdf:about="http://202.114.118.190:8099/lod/ProcessingInfo104c1605-d23c-46c3-af6e-1cf398671033">
+          <li:LE_Processing rdf:about="http://geos.whu.edu.cn:8099/resource/ProcessingInfo104c1605-d23c-46c3-af6e-1cf398671033">
             <li:runTimeParameters>Join Operation(optional), JOIN_ONE_TO_ONE; Match Option(optional), INTERSECT</li:runTimeParameters>
             <li:procedureDescription>Use tool 'Spatial Join' under Analysis Tools: Joins attributes from one feature to another based on the spatial relationship.</li:procedureDescription>
             <li:softwareReference>
@@ -318,10 +318,10 @@
             </li:identifier>
           </li:LE_Processing>
         </li:processingInformation>
-        <li:output rdf:resource="http://202.114.118.190:8099/lod/Sourcedfebf956-526a-4788-abcf-bc7033a06c15"/>
-        <li:source rdf:resource="http://202.114.118.190:8099/lod/Source85855ff6-b02a-4db5-93dc-2b0dfb18cd96"/>
-        <li:source rdf:resource="http://202.114.118.190:8099/lod/Sourcee580b9e0-a101-4705-b43d-fb2da4fea17f"/>
-        <li:processor rdf:resource="http://202.114.118.190:8099/lod/Processor78e5f4f8-5bae-4e17-aa07-6fca4a43e67d"/>
+        <li:output rdf:resource="http://geos.whu.edu.cn:8099/resource/Sourcedfebf956-526a-4788-abcf-bc7033a06c15"/>
+        <li:source rdf:resource="http://geos.whu.edu.cn:8099/resource/Source85855ff6-b02a-4db5-93dc-2b0dfb18cd96"/>
+        <li:source rdf:resource="http://geos.whu.edu.cn:8099/resource/Sourcee580b9e0-a101-4705-b43d-fb2da4fea17f"/>
+        <li:processor rdf:resource="http://geos.whu.edu.cn:8099/resource/Processor78e5f4f8-5bae-4e17-aa07-6fca4a43e67d"/>
         <md:description>Join Wuhan administrative region with spatial net</md:description>
         <li:stepDateTime>
           <iso19108:Period>

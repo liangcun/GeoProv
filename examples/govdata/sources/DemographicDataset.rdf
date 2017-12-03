@@ -5,236 +5,236 @@
     xmlns:spatial="http://geovocab.org/spatial#"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-  <dex:AdministrativeRegion rdf:about="http://202.114.118.190:8099/lod/Featurec278cef5-1ea5-41fd-956e-e6d4a488c626">
+  <dex:AdministrativeRegion rdf:about="http://geos.whu.edu.cn:8099/resource/Featurec278cef5-1ea5-41fd-956e-e6d4a488c626">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">QiaoKou</rdfs:label>
     <dex:hasProperty>
-      <dex:PopDensity rdf:about="http://202.114.118.190:8099/lod/Propertycf1cdd84-14df-4b49-8c51-2d07df277218">
+      <dex:PopDensity rdf:about="http://geos.whu.edu.cn:8099/resource/Propertycf1cdd84-14df-4b49-8c51-2d07df277218">
         <dex:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">46.39</dex:value>
       </dex:PopDensity>
     </dex:hasProperty>
     <dex:hasProperty>
-      <dex:PopBorn rdf:about="http://202.114.118.190:8099/lod/Propertyfd14fc98-2f77-47fe-8f85-402278b558a7">
+      <dex:PopBorn rdf:about="http://geos.whu.edu.cn:8099/resource/Propertyfd14fc98-2f77-47fe-8f85-402278b558a7">
         <dex:value rdf:datatype="http://www.w3.org/2001/XMLSchema#long">4600</dex:value>
       </dex:PopBorn>
     </dex:hasProperty>
     <dex:hasProperty>
-      <dex:PopTotal rdf:about="http://202.114.118.190:8099/lod/Property5f43f742-d20f-432c-812a-a9e973f00a1f">
+      <dex:PopTotal rdf:about="http://geos.whu.edu.cn:8099/resource/Property5f43f742-d20f-432c-812a-a9e973f00a1f">
         <dex:value rdf:datatype="http://www.w3.org/2001/XMLSchema#long">528700</dex:value>
       </dex:PopTotal>
     </dex:hasProperty>
   </dex:AdministrativeRegion>
-  <dex:AdministrativeRegion rdf:about="http://202.114.118.190:8099/lod/Feature82bf78b7-5bcd-44c3-9499-e2c97632d384">
+  <dex:AdministrativeRegion rdf:about="http://geos.whu.edu.cn:8099/resource/Feature82bf78b7-5bcd-44c3-9499-e2c97632d384">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CaiDian</rdfs:label>
     <dex:hasProperty>
-      <dex:PopDensity rdf:about="http://202.114.118.190:8099/lod/Propertyaf0b5ef5-5f8d-42b5-89ce-4c06dbb9685d">
+      <dex:PopDensity rdf:about="http://geos.whu.edu.cn:8099/resource/Propertyaf0b5ef5-5f8d-42b5-89ce-4c06dbb9685d">
         <dex:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1108.1</dex:value>
       </dex:PopDensity>
     </dex:hasProperty>
     <dex:hasProperty>
-      <dex:PopBorn rdf:about="http://202.114.118.190:8099/lod/Propertye019b8a1-c8d8-42d2-bc82-be4f1cedffce">
+      <dex:PopBorn rdf:about="http://geos.whu.edu.cn:8099/resource/Propertye019b8a1-c8d8-42d2-bc82-be4f1cedffce">
         <dex:value rdf:datatype="http://www.w3.org/2001/XMLSchema#long">6200</dex:value>
       </dex:PopBorn>
     </dex:hasProperty>
     <dex:hasProperty>
-      <dex:PopTotal rdf:about="http://202.114.118.190:8099/lod/Property3e42537d-cffc-40b3-8d3e-c2de46daa65d">
+      <dex:PopTotal rdf:about="http://geos.whu.edu.cn:8099/resource/Property3e42537d-cffc-40b3-8d3e-c2de46daa65d">
         <dex:value rdf:datatype="http://www.w3.org/2001/XMLSchema#long">449100</dex:value>
       </dex:PopTotal>
     </dex:hasProperty>
   </dex:AdministrativeRegion>
-  <dex:AdministrativeRegion rdf:about="http://202.114.118.190:8099/lod/Featureebeb74f8-7d27-4f1c-9bcb-9ce13abdcbda">
+  <dex:AdministrativeRegion rdf:about="http://geos.whu.edu.cn:8099/resource/Featureebeb74f8-7d27-4f1c-9bcb-9ce13abdcbda">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JiangAn</rdfs:label>
     <dex:hasProperty>
-      <dex:PopDensity rdf:about="http://202.114.118.190:8099/lod/Property4630e017-cc58-4284-a3f6-a2dcedcc111f">
+      <dex:PopDensity rdf:about="http://geos.whu.edu.cn:8099/resource/Property4630e017-cc58-4284-a3f6-a2dcedcc111f">
         <dex:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">64.24</dex:value>
       </dex:PopDensity>
     </dex:hasProperty>
     <dex:hasProperty>
-      <dex:PopBorn rdf:about="http://202.114.118.190:8099/lod/Property8b5c827a-e501-47fc-8de3-46100c91e094">
+      <dex:PopBorn rdf:about="http://geos.whu.edu.cn:8099/resource/Property8b5c827a-e501-47fc-8de3-46100c91e094">
         <dex:value rdf:datatype="http://www.w3.org/2001/XMLSchema#long">6700</dex:value>
       </dex:PopBorn>
     </dex:hasProperty>
     <dex:hasProperty>
-      <dex:PopTotal rdf:about="http://202.114.118.190:8099/lod/Propertya3ea3b05-e34c-44f5-ad8f-8eb15f523e31">
+      <dex:PopTotal rdf:about="http://geos.whu.edu.cn:8099/resource/Propertya3ea3b05-e34c-44f5-ad8f-8eb15f523e31">
         <dex:value rdf:datatype="http://www.w3.org/2001/XMLSchema#long">700200</dex:value>
       </dex:PopTotal>
     </dex:hasProperty>
   </dex:AdministrativeRegion>
-  <dex:AdministrativeRegion rdf:about="http://202.114.118.190:8099/lod/Featureb193b334-baaf-405e-800c-45a447eb0df0">
+  <dex:AdministrativeRegion rdf:about="http://geos.whu.edu.cn:8099/resource/Featureb193b334-baaf-405e-800c-45a447eb0df0">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HongShan</rdfs:label>
     <dex:hasProperty>
-      <dex:PopDensity rdf:about="http://202.114.118.190:8099/lod/Propertycd13ecde-ab64-4eb6-a317-13ec63f9ffa6">
+      <dex:PopDensity rdf:about="http://geos.whu.edu.cn:8099/resource/Propertycd13ecde-ab64-4eb6-a317-13ec63f9ffa6">
         <dex:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">480.2</dex:value>
       </dex:PopDensity>
     </dex:hasProperty>
     <dex:hasProperty>
-      <dex:PopBorn rdf:about="http://202.114.118.190:8099/lod/Propertyeb961f25-f110-48ba-872c-a4af3e233322">
+      <dex:PopBorn rdf:about="http://geos.whu.edu.cn:8099/resource/Propertyeb961f25-f110-48ba-872c-a4af3e233322">
         <dex:value rdf:datatype="http://www.w3.org/2001/XMLSchema#long">13600</dex:value>
       </dex:PopBorn>
     </dex:hasProperty>
     <dex:hasProperty>
-      <dex:PopTotal rdf:about="http://202.114.118.190:8099/lod/Propertyca5e7e32-4073-460c-9458-46b52dc0a577">
+      <dex:PopTotal rdf:about="http://geos.whu.edu.cn:8099/resource/Propertyca5e7e32-4073-460c-9458-46b52dc0a577">
         <dex:value rdf:datatype="http://www.w3.org/2001/XMLSchema#long">927300</dex:value>
       </dex:PopTotal>
     </dex:hasProperty>
   </dex:AdministrativeRegion>
-  <dex:AdministrativeRegion rdf:about="http://202.114.118.190:8099/lod/Feature0bc06fa0-af45-424e-87e3-55dde9b98724">
+  <dex:AdministrativeRegion rdf:about="http://geos.whu.edu.cn:8099/resource/Feature0bc06fa0-af45-424e-87e3-55dde9b98724">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">QingShan</rdfs:label>
     <dex:hasProperty>
-      <dex:PopDensity rdf:about="http://202.114.118.190:8099/lod/Property00f424e4-e3ae-4432-adb7-3c0b5541e57d">
+      <dex:PopDensity rdf:about="http://geos.whu.edu.cn:8099/resource/Property00f424e4-e3ae-4432-adb7-3c0b5541e57d">
         <dex:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">68.4</dex:value>
       </dex:PopDensity>
     </dex:hasProperty>
     <dex:hasProperty>
-      <dex:PopBorn rdf:about="http://202.114.118.190:8099/lod/Propertyeed2acb8-f327-487c-839a-07760c5144ba">
+      <dex:PopBorn rdf:about="http://geos.whu.edu.cn:8099/resource/Propertyeed2acb8-f327-487c-839a-07760c5144ba">
         <dex:value rdf:datatype="http://www.w3.org/2001/XMLSchema#long">3500</dex:value>
       </dex:PopBorn>
     </dex:hasProperty>
     <dex:hasProperty>
-      <dex:PopTotal rdf:about="http://202.114.118.190:8099/lod/Propertyd6071b74-3d68-49b6-b395-3241f3d85ac6">
+      <dex:PopTotal rdf:about="http://geos.whu.edu.cn:8099/resource/Propertyd6071b74-3d68-49b6-b395-3241f3d85ac6">
         <dex:value rdf:datatype="http://www.w3.org/2001/XMLSchema#long">442400</dex:value>
       </dex:PopTotal>
     </dex:hasProperty>
   </dex:AdministrativeRegion>
-  <dex:AdministrativeRegion rdf:about="http://202.114.118.190:8099/lod/Featureea26b501-8036-404f-aac2-0f642858d6b4">
+  <dex:AdministrativeRegion rdf:about="http://geos.whu.edu.cn:8099/resource/Featureea26b501-8036-404f-aac2-0f642858d6b4">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HuangPi</rdfs:label>
     <dex:hasProperty>
-      <dex:PopDensity rdf:about="http://202.114.118.190:8099/lod/Property849fc227-03e3-47cc-9e79-6a6165768a36">
+      <dex:PopDensity rdf:about="http://geos.whu.edu.cn:8099/resource/Property849fc227-03e3-47cc-9e79-6a6165768a36">
         <dex:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2261.0</dex:value>
       </dex:PopDensity>
     </dex:hasProperty>
     <dex:hasProperty>
-      <dex:PopBorn rdf:about="http://202.114.118.190:8099/lod/Property8519775a-ca4b-4596-9121-265e82ec782d">
+      <dex:PopBorn rdf:about="http://geos.whu.edu.cn:8099/resource/Property8519775a-ca4b-4596-9121-265e82ec782d">
         <dex:value rdf:datatype="http://www.w3.org/2001/XMLSchema#long">13700</dex:value>
       </dex:PopBorn>
     </dex:hasProperty>
     <dex:hasProperty>
-      <dex:PopTotal rdf:about="http://202.114.118.190:8099/lod/Property32d403f5-e8ea-4e70-bdbd-4eba50e1644e">
+      <dex:PopTotal rdf:about="http://geos.whu.edu.cn:8099/resource/Property32d403f5-e8ea-4e70-bdbd-4eba50e1644e">
         <dex:value rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1112500</dex:value>
       </dex:PopTotal>
     </dex:hasProperty>
   </dex:AdministrativeRegion>
-  <dex:AdministrativeRegion rdf:about="http://202.114.118.190:8099/lod/Featurefffbda22-9f09-41c8-94de-eea9bb01230f">
+  <dex:AdministrativeRegion rdf:about="http://geos.whu.edu.cn:8099/resource/Featurefffbda22-9f09-41c8-94de-eea9bb01230f">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HanYang</rdfs:label>
     <dex:hasProperty>
-      <dex:PopDensity rdf:about="http://202.114.118.190:8099/lod/Propertyb83dc0b5-674d-4bc5-a4e8-51008d06ae28">
+      <dex:PopDensity rdf:about="http://geos.whu.edu.cn:8099/resource/Propertyb83dc0b5-674d-4bc5-a4e8-51008d06ae28">
         <dex:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">108.34</dex:value>
       </dex:PopDensity>
     </dex:hasProperty>
     <dex:hasProperty>
-      <dex:PopBorn rdf:about="http://202.114.118.190:8099/lod/Propertyb5b8d7e9-fe57-4040-93a8-dc5e2e985ecf">
+      <dex:PopBorn rdf:about="http://geos.whu.edu.cn:8099/resource/Propertyb5b8d7e9-fe57-4040-93a8-dc5e2e985ecf">
         <dex:value rdf:datatype="http://www.w3.org/2001/XMLSchema#long">6100</dex:value>
       </dex:PopBorn>
     </dex:hasProperty>
     <dex:hasProperty>
-      <dex:PopTotal rdf:about="http://202.114.118.190:8099/lod/Propertya18ebfa1-fff7-4679-8724-bf642b45b1b5">
+      <dex:PopTotal rdf:about="http://geos.whu.edu.cn:8099/resource/Propertya18ebfa1-fff7-4679-8724-bf642b45b1b5">
         <dex:value rdf:datatype="http://www.w3.org/2001/XMLSchema#long">567200</dex:value>
       </dex:PopTotal>
     </dex:hasProperty>
   </dex:AdministrativeRegion>
-  <dex:AdministrativeRegion rdf:about="http://202.114.118.190:8099/lod/Feature90d1957c-4c13-475d-a139-6dc561194d32">
+  <dex:AdministrativeRegion rdf:about="http://geos.whu.edu.cn:8099/resource/Feature90d1957c-4c13-475d-a139-6dc561194d32">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HanNan</rdfs:label>
     <dex:hasProperty>
-      <dex:PopDensity rdf:about="http://202.114.118.190:8099/lod/Property7d7bec44-1c69-4393-b45a-1a39c96b5a7c">
+      <dex:PopDensity rdf:about="http://geos.whu.edu.cn:8099/resource/Property7d7bec44-1c69-4393-b45a-1a39c96b5a7c">
         <dex:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">287.7</dex:value>
       </dex:PopDensity>
     </dex:hasProperty>
     <dex:hasProperty>
-      <dex:PopBorn rdf:about="http://202.114.118.190:8099/lod/Propertyffc926ac-482b-4055-be8a-5d9f9767a079">
+      <dex:PopBorn rdf:about="http://geos.whu.edu.cn:8099/resource/Propertyffc926ac-482b-4055-be8a-5d9f9767a079">
         <dex:value rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1100</dex:value>
       </dex:PopBorn>
     </dex:hasProperty>
     <dex:hasProperty>
-      <dex:PopTotal rdf:about="http://202.114.118.190:8099/lod/Property62edfb61-34cc-45a1-a2e0-a19e44376138">
+      <dex:PopTotal rdf:about="http://geos.whu.edu.cn:8099/resource/Property62edfb61-34cc-45a1-a2e0-a19e44376138">
         <dex:value rdf:datatype="http://www.w3.org/2001/XMLSchema#long">111600</dex:value>
       </dex:PopTotal>
     </dex:hasProperty>
   </dex:AdministrativeRegion>
-  <dex:AdministrativeRegion rdf:about="http://202.114.118.190:8099/lod/Feature29ccc646-4b51-4001-80d0-227bda07b49d">
+  <dex:AdministrativeRegion rdf:about="http://geos.whu.edu.cn:8099/resource/Feature29ccc646-4b51-4001-80d0-227bda07b49d">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JiangHan</rdfs:label>
     <dex:hasProperty>
-      <dex:PopDensity rdf:about="http://202.114.118.190:8099/lod/Property93ead40b-9482-4f2e-84fc-7a3dc3ea8ce9">
+      <dex:PopDensity rdf:about="http://geos.whu.edu.cn:8099/resource/Property93ead40b-9482-4f2e-84fc-7a3dc3ea8ce9">
         <dex:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">33.43</dex:value>
       </dex:PopDensity>
     </dex:hasProperty>
     <dex:hasProperty>
-      <dex:PopBorn rdf:about="http://202.114.118.190:8099/lod/Propertyeddced8c-d319-4ebf-a9e2-2293a2dff9a6">
+      <dex:PopBorn rdf:about="http://geos.whu.edu.cn:8099/resource/Propertyeddced8c-d319-4ebf-a9e2-2293a2dff9a6">
         <dex:value rdf:datatype="http://www.w3.org/2001/XMLSchema#long">4400</dex:value>
       </dex:PopBorn>
     </dex:hasProperty>
     <dex:hasProperty>
-      <dex:PopTotal rdf:about="http://202.114.118.190:8099/lod/Property4bc86b26-91a7-4693-bcaf-204e0e1f40d5">
+      <dex:PopTotal rdf:about="http://geos.whu.edu.cn:8099/resource/Property4bc86b26-91a7-4693-bcaf-204e0e1f40d5">
         <dex:value rdf:datatype="http://www.w3.org/2001/XMLSchema#long">485600</dex:value>
       </dex:PopTotal>
     </dex:hasProperty>
   </dex:AdministrativeRegion>
-  <dex:AdministrativeRegion rdf:about="http://202.114.118.190:8099/lod/Featurec4751a2a-58f2-4b41-90b2-cad6ebad6d98">
+  <dex:AdministrativeRegion rdf:about="http://geos.whu.edu.cn:8099/resource/Featurec4751a2a-58f2-4b41-90b2-cad6ebad6d98">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DongXiHu</rdfs:label>
     <dex:hasProperty>
-      <dex:PopDensity rdf:about="http://202.114.118.190:8099/lod/Property8b5eb0b7-fdad-4597-a003-c91e7846943d">
+      <dex:PopDensity rdf:about="http://geos.whu.edu.cn:8099/resource/Property8b5eb0b7-fdad-4597-a003-c91e7846943d">
         <dex:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">439.19</dex:value>
       </dex:PopDensity>
     </dex:hasProperty>
     <dex:hasProperty>
-      <dex:PopBorn rdf:about="http://202.114.118.190:8099/lod/Property67b335ef-80b1-42b7-9a05-d234f1b44b36">
+      <dex:PopBorn rdf:about="http://geos.whu.edu.cn:8099/resource/Property67b335ef-80b1-42b7-9a05-d234f1b44b36">
         <dex:value rdf:datatype="http://www.w3.org/2001/XMLSchema#long">3400</dex:value>
       </dex:PopBorn>
     </dex:hasProperty>
     <dex:hasProperty>
-      <dex:PopTotal rdf:about="http://202.114.118.190:8099/lod/Propertyfd57d87c-f778-403e-8ff1-d2fb9ab4b0c8">
+      <dex:PopTotal rdf:about="http://geos.whu.edu.cn:8099/resource/Propertyfd57d87c-f778-403e-8ff1-d2fb9ab4b0c8">
         <dex:value rdf:datatype="http://www.w3.org/2001/XMLSchema#long">276400</dex:value>
       </dex:PopTotal>
     </dex:hasProperty>
   </dex:AdministrativeRegion>
-  <dex:AdministrativeRegion rdf:about="http://202.114.118.190:8099/lod/Feature3a2e57c9-9a39-496e-a9a1-7aee7e09f8da">
+  <dex:AdministrativeRegion rdf:about="http://geos.whu.edu.cn:8099/resource/Feature3a2e57c9-9a39-496e-a9a1-7aee7e09f8da">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WuChang</rdfs:label>
     <dex:hasProperty>
-      <dex:PopDensity rdf:about="http://202.114.118.190:8099/lod/Property606f6232-c6c7-4119-a732-bb33469649ee">
+      <dex:PopDensity rdf:about="http://geos.whu.edu.cn:8099/resource/Property606f6232-c6c7-4119-a732-bb33469649ee">
         <dex:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">87.42</dex:value>
       </dex:PopDensity>
     </dex:hasProperty>
     <dex:hasProperty>
-      <dex:PopBorn rdf:about="http://202.114.118.190:8099/lod/Property6854a184-8628-4fde-b373-a0b98bd723c1">
+      <dex:PopBorn rdf:about="http://geos.whu.edu.cn:8099/resource/Property6854a184-8628-4fde-b373-a0b98bd723c1">
         <dex:value rdf:datatype="http://www.w3.org/2001/XMLSchema#long">8700</dex:value>
       </dex:PopBorn>
     </dex:hasProperty>
     <dex:hasProperty>
-      <dex:PopTotal rdf:about="http://202.114.118.190:8099/lod/Property4ae87095-3be6-4ecf-87a5-7e54a1912e64">
+      <dex:PopTotal rdf:about="http://geos.whu.edu.cn:8099/resource/Property4ae87095-3be6-4ecf-87a5-7e54a1912e64">
         <dex:value rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1086400</dex:value>
       </dex:PopTotal>
     </dex:hasProperty>
   </dex:AdministrativeRegion>
-  <dex:AdministrativeRegion rdf:about="http://202.114.118.190:8099/lod/Feature09c30565-8f83-4f16-adf8-ad988d59d897">
+  <dex:AdministrativeRegion rdf:about="http://geos.whu.edu.cn:8099/resource/Feature09c30565-8f83-4f16-adf8-ad988d59d897">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XinZhou</rdfs:label>
     <dex:hasProperty>
-      <dex:PopDensity rdf:about="http://202.114.118.190:8099/lod/Property4ef5c066-d950-4e96-9013-369a396d2af4">
+      <dex:PopDensity rdf:about="http://geos.whu.edu.cn:8099/resource/Property4ef5c066-d950-4e96-9013-369a396d2af4">
         <dex:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1500.0</dex:value>
       </dex:PopDensity>
     </dex:hasProperty>
     <dex:hasProperty>
-      <dex:PopBorn rdf:about="http://202.114.118.190:8099/lod/Propertyf0bc796c-651a-4bf9-9665-6252105d8ca0">
+      <dex:PopBorn rdf:about="http://geos.whu.edu.cn:8099/resource/Propertyf0bc796c-651a-4bf9-9665-6252105d8ca0">
         <dex:value rdf:datatype="http://www.w3.org/2001/XMLSchema#long">11800</dex:value>
       </dex:PopBorn>
     </dex:hasProperty>
     <dex:hasProperty>
-      <dex:PopTotal rdf:about="http://202.114.118.190:8099/lod/Property2f493098-91d8-43da-80d9-c4a5b2cf308f">
+      <dex:PopTotal rdf:about="http://geos.whu.edu.cn:8099/resource/Property2f493098-91d8-43da-80d9-c4a5b2cf308f">
         <dex:value rdf:datatype="http://www.w3.org/2001/XMLSchema#long">949500</dex:value>
       </dex:PopTotal>
     </dex:hasProperty>
   </dex:AdministrativeRegion>
-  <dex:AdministrativeRegion rdf:about="http://202.114.118.190:8099/lod/Feature6df088c2-9da9-441c-ac30-953d258a6e7e">
+  <dex:AdministrativeRegion rdf:about="http://geos.whu.edu.cn:8099/resource/Feature6df088c2-9da9-441c-ac30-953d258a6e7e">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JiangXia</rdfs:label>
     <dex:hasProperty>
-      <dex:PopDensity rdf:about="http://202.114.118.190:8099/lod/Property0b8dc38b-c7bf-4ea7-a469-9393ae0ede2f">
+      <dex:PopDensity rdf:about="http://geos.whu.edu.cn:8099/resource/Property0b8dc38b-c7bf-4ea7-a469-9393ae0ede2f">
         <dex:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2010.0</dex:value>
       </dex:PopDensity>
     </dex:hasProperty>
     <dex:hasProperty>
-      <dex:PopBorn rdf:about="http://202.114.118.190:8099/lod/Propertydd6a6a03-ceed-47f0-b8a6-c26e8e5c4161">
+      <dex:PopBorn rdf:about="http://geos.whu.edu.cn:8099/resource/Propertydd6a6a03-ceed-47f0-b8a6-c26e8e5c4161">
         <dex:value rdf:datatype="http://www.w3.org/2001/XMLSchema#long">8900</dex:value>
       </dex:PopBorn>
     </dex:hasProperty>
     <dex:hasProperty>
-      <dex:PopTotal rdf:about="http://202.114.118.190:8099/lod/Property14f501fe-085a-4224-b115-783ddec20dc8">
+      <dex:PopTotal rdf:about="http://geos.whu.edu.cn:8099/resource/Property14f501fe-085a-4224-b115-783ddec20dc8">
         <dex:value rdf:datatype="http://www.w3.org/2001/XMLSchema#long">583600</dex:value>
       </dex:PopTotal>
     </dex:hasProperty>
