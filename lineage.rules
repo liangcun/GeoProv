@@ -1,12 +1,23 @@
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-@prefix li: <http://geos.whu.edu.cn/ont/iso19115/lineage.owl#>
-@prefix md: <http://geos.whu.edu.cn/ont/iso19115/metadata.owl#>
-@prefix prov: <http://www.w3.org/ns/prov#>
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix li: <http://geos.whu.edu.cn/ont/iso19115/lineage#> .
+@prefix md: <http://geos.whu.edu.cn/ont/iso19115/metadata.owl#> .
+@prefix iso19108: <http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 
-[subClassRules:(?x rdf:type ?y)(?y rdfs:subClassOf ?z)->(?x rdf:type ?z)]
-[subPropertyRules:(?s ?p1 ?o)(?p1 rdfs:subPropertyOf ?p2)->(?s ?p2 ?o)]
-[derivationRules:(?s li:source ?o1)(?s li:output ?o2)->(?o2 prov:wasDerivedFrom ?o1)]
-[attributionRules:(?p li:output ?s)(?p li:processor ?responsibility)(?responsibility md:party ?party)->(?s prov:wasAttributedTo ?party)]
-[associationRules:(?p li:processor ?responsibility)(?responsibility md:party ?party)->(?p prov:wasAssociatedWith ?party)]
-[contactRules:(?bundle md:contact ?responsibility)(?responsibility md:party ?party)->(?bundle prov:wasAttributedTo ?party)]
+[subClassRule: (?a rdf:type ?x), (?x rdfs:subClassOf ?y) -> (?a rdf:type ?y)]
+[subPropertyRule: (?a ?p ?b), (?p rdfs:subPropertyOf ?q) -> (?a ?q ?b)]
+[associationRule: (?a li:processor ?b), (?b md:party ?c) 
+  -> (?a prov:wasAssociatedWith ?c)]
+[attributionRule: (?a li:sourceStep ?b), (?b li:processor ?c), (?c md:party ?d) 
+  -> (?a prov:wasAttributedTo ?d)]
+[derivationRule: (?a li:sourceStep ?b), (?b li:source ?c) 
+  -> (?a prov:wasDerivedFrom ?c)]
+[delegationRule: (?a md:individual ?b) -> (?b prov:actedOnBehalfOf ?a)]
+[communicationRule: (?a li:source ?b), (?b li:sourceStep ?c) 
+  -> (?a prov:wasInformedBy ?c)]
+[startRule: (?a li:stepDateTime ?b), (?b iso19108:begin ?c), (?c iso19108:dateTimePosition ?d)
+  -> (?a prov:startedAtTime?d)]
+[endRule: (?a li:stepDateTime ?b), (?b iso19108:end ?c), (?c iso19108:dateTimePosition ?d)
+  -> (?a prov:endedAtTime ?d)]
+[roleRule: (?a md:role ?b) -> (?a prov:hadRole?b)]
