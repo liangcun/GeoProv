@@ -1,0 +1,35 @@
+@prefix :     <http://geos.whu.edu.cn:8099/resource/> .
+@prefix li:  <http://geos.whu.edu.cn/ont/iso19115/lineage.owl#> .
+@prefix md:  <http://geos.whu.edu.cn/ont/iso19115/metadata.owl#> .
+@prefix sc:  <http://geos.whu.edu.cn/ont/iso19115/codelist/ScopeCode.owl#> .
+
+:lineage_m1
+  li:scope [
+    a md:MD_Scope
+    md:level sc:Dataset
+  ];
+  li:lineageSource :Map_A2, :Map_A1;
+  li:processStep :ps_m1;
+  li:statement "a refined version (Map_A2) of Map_A was available." .
+
+:Map_A2 
+  a li:LI_Source;
+  md:description "Version 2 of Map_A";
+  li:Scope [
+    a md:MD_Scope
+    md:level sc:Dataset
+  ].
+
+:Map_A1 
+  a li:LI_Source;
+  md:description "first version of online map for A";
+  li:Scope [
+    a md:MD_Scope
+    md:level sc:Dataset
+  ].
+
+:ps_m1 
+  a li:LE_ProcessStep;
+  li:source :Map_A1;
+  li:output :Map_A2.
+

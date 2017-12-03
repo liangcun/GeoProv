@@ -1,0 +1,45 @@
+@prefix :     <http://geos.whu.edu.cn:8099/resource/> .
+@prefix li:  <http://geos.whu.edu.cn/ont/iso19115/lineage.owl#> .
+@prefix md:  <http://geos.whu.edu.cn/ont/iso19115/metadata.owl#> .
+@prefix sc:  <http://geos.whu.edu.cn/ont/iso19115/codelist/ScopeCode.owl#> .
+
+:lineage_m3
+  li:scope [
+    a md:MD_Scope
+    md:level sc:attributeType
+  ];
+  li:lineageSource :Map_A4, :Map_A3, :Overhead_Clearance;
+  li:processStep :ps_m3;
+  li:statement "the attribute overhead clearance was resurveyed to nearest decimeter." .
+
+:Overhead_Clearance
+  a li:LI_Source;
+  md:description "overhead clearance attribute of road network in A";
+  li:Scope [
+    a md:MD_Scope
+    md:level sc:attributeType
+  ].
+
+:Map_A4 
+  a li:LI_Source;
+  md:description "Version 4 of Map_A";
+  li:Scope [
+    a md:MD_Scope
+    md:level sc:Dataset
+  ].
+
+:Map_A3 
+  a li:LI_Source;
+  md:description "Version 3 of Map_A";
+  li:Scope [
+    a md:MD_Scope
+    md:level sc:Dataset
+  ].
+
+:ps_m3 
+  a li:LE_ProcessStep;
+  md:description "resurvey of overhead clearance attribute of the road network in A"
+  li:source :Map_A3;
+  li:source :Overhead_Clearance;
+  li:output :Map_A4.
+

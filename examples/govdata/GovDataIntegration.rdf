@@ -34,7 +34,7 @@
                 <md:attributes>PopTotal,PopBorn,KindergartenNum</md:attributes>
               </md:MD_ScopeDescription>
             </md:levelDescription>
-            <md:level rdf:resource="http://geos.whu.edu.cn/ont/iso19115.owl#dataset"/>
+            <md:level rdf:resource="http://geos.whu.edu.cn/ont/iso19115/codelist/ScopeCode.owl#dataset"/>
           </md:MD_Scope>
         </li:scope>
         <li:sourceReferenceSystem>
@@ -59,7 +59,7 @@
                 <md:attributes>Address</md:attributes>
               </md:MD_ScopeDescription>
             </md:levelDescription>
-            <md:level rdf:resource="http://geos.whu.edu.cn/ont/iso19115.owl#dataset"/>
+            <md:level rdf:resource="http://geos.whu.edu.cn/ont/iso19115/codelist/ScopeCode.owl#dataset"/>
           </md:MD_Scope>
         </li:scope>
         <li:sourceReferenceSystem rdf:resource="http://geos.whu.edu.cn:8099/resource/RS44b9feba-bd1b-4ad1-b6e7-34af2d340bcf"/>
@@ -82,7 +82,7 @@
                 <md:attributes>PopTotal,PopBorn,PopDensity</md:attributes>
               </md:MD_ScopeDescription>
             </md:levelDescription>
-            <md:level rdf:resource="http://geos.whu.edu.cn/ont/iso19115.owl#dataset"/>
+            <md:level rdf:resource="http://geos.whu.edu.cn/ont/iso19115/codelist/ScopeCode.owl#dataset"/>
           </md:MD_Scope>
         </li:scope>
         <li:sourceReferenceSystem rdf:resource="http://geos.whu.edu.cn:8099/resource/RS44b9feba-bd1b-4ad1-b6e7-34af2d340bcf"/>
@@ -116,7 +116,7 @@
                     <md:attributes>PopTotal,PopBorn</md:attributes>
                   </md:MD_ScopeDescription>
                 </md:levelDescription>
-                <md:level rdf:resource="http://geos.whu.edu.cn/ont/iso19115.owl#dataset"/>
+                <md:level rdf:resource="http://geos.whu.edu.cn/ont/iso19115/codelist/ScopeCode.owl#dataset"/>
               </md:MD_Scope>
             </li:scope>
             <li:sourceReferenceSystem rdf:resource="http://geos.whu.edu.cn:8099/resource/RS44b9feba-bd1b-4ad1-b6e7-34af2d340bcf"/>
@@ -203,7 +203,7 @@
                     <md:attributes>PopTotal,PopBorn,PopDensity</md:attributes>
                   </md:MD_ScopeDescription>
                 </md:levelDescription>
-                <md:level rdf:resource="http://geos.whu.edu.cn/ont/iso19115.owl#dataset"/>
+                <md:level rdf:resource="http://geos.whu.edu.cn/ont/iso19115/codelist/ScopeCode.owl#dataset"/>
               </md:MD_Scope>
             </li:scope>
             <li:sourceReferenceSystem>

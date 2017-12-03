@@ -1,0 +1,45 @@
+@prefix :     <http://geos.whu.edu.cn:8099/resource/> .
+@prefix li:  <http://geos.whu.edu.cn/ont/iso19115/lineage.owl#> .
+@prefix md:  <http://geos.whu.edu.cn/ont/iso19115/metadata.owl#> .
+@prefix sc:  <http://geos.whu.edu.cn/ont/iso19115/codelist/ScopeCode.owl#> .
+
+:lineage_m4
+  li:scope [
+    a md:MD_Scope
+    md:level sc:feature
+  ];
+  li:lineageSource :Map_A4, :Map_A5, :Bridge_b;
+  li:processStep :ps_m4;
+  li:statement "A new feature (Bridge_b) was constructed." .
+
+:Bridge_b
+  a li:LI_Source;
+  md:description "Bridge feature instance";
+  li:Scope [
+    a md:MD_Scope
+    md:level sc:feature
+  ].
+
+:Map_A4 
+  a li:LI_Source;
+  md:description "Version 4 of Map_A";
+  li:Scope [
+    a md:MD_Scope
+    md:level sc:Dataset
+  ].
+
+:Map_A5 
+  a li:LI_Source;
+  md:description "Version 5 of Map_A";
+  li:Scope [
+    a md:MD_Scope
+    md:level sc:Dataset
+  ].
+
+:ps_m4 
+  a li:LE_ProcessStep;
+  md:description "update a new feature for Map_A"
+  li:source :Map_A4;
+  li:source :Bridge_b;
+  li:output :Map_A5.
+
