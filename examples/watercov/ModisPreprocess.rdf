@@ -23,9 +23,9 @@
             <md:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-07-15T15:35:00</md:date>
        </md:CI_Date>
     </md:dateInfo>
+    <li:lineageSource rdf:resource="http://geos.whu.edu.cn:8099/resource/MODIS505f68f4-a8c7-4823-bad5-8672c02cc0ab"/>
+    <li:lineageSource rdf:resource="http://geos.whu.edu.cn:8099/resource/MODIScb998e00-baf0-4594-bad2-5258bc4eb71f"/>
     <li:lineageSource>
-      <rdf:Description rdf:about="http://geos.whu.edu.cn:8099/resource/MODIS505f68f4-a8c7-4823-bad5-8672c02cc0ab">
-        <prov:wasDerivedFrom>
           <li:LE_Source rdf:about="http://geos.whu.edu.cn:8099/resource/MODISbb39c5b9-c4e5-48f9-9d37-4347423b7ff1">
             <li:scope>
               <md:MD_Scope>
@@ -96,15 +96,7 @@
             </li:sourceCitation>
             <md:description>MOD09A1-Level 3 8-Day Surface Reflectance</md:description>
           </li:LE_Source>
-        </prov:wasDerivedFrom>
-      </rdf:Description>
     </li:lineageSource>
-    <li:lineageSource>
-      <rdf:Description rdf:about="http://geos.whu.edu.cn:8099/resource/MODIScb998e00-baf0-4594-bad2-5258bc4eb71f">
-        <prov:wasDerivedFrom rdf:resource="http://geos.whu.edu.cn:8099/resource/MODISbb39c5b9-c4e5-48f9-9d37-4347423b7ff1"/>
-      </rdf:Description>
-    </li:lineageSource>
-    <li:lineageSource rdf:resource="http://geos.whu.edu.cn:8099/resource/MODISbb39c5b9-c4e5-48f9-9d37-4347423b7ff1"/>
     <li:processStep>
       <li:LE_ProcessStep rdf:about="http://geos.whu.edu.cn:8099/resource/Process5d61f53f-66bc-4f39-a53f-e62c816bc3e6">
         <li:processingInformation>
