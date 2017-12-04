@@ -17,7 +17,7 @@
 [communicationRule: (?a li:source ?b), (?b li:sourceStep ?c) 
   -> (?a prov:wasInformedBy ?c)]
 [startRule: (?a li:stepDateTime ?b), (?b iso19108:begin ?c), (?c iso19108:dateTimePosition ?d)
-  -> (?a prov:startedAtTime?d)]
+  -> (?a prov:startedAtTime ?d)]
 [endRule: (?a li:stepDateTime ?b), (?b iso19108:end ?c), (?c iso19108:dateTimePosition ?d)
   -> (?a prov:endedAtTime ?d)]
-[roleRule: (?a md:role ?b) -> (?a prov:hadRole?b)]
+[roleRule: (?a md:role ?b) -> (?a prov:hadRole ?b)]
