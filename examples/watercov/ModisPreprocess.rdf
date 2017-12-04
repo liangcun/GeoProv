@@ -117,6 +117,7 @@
         <li:output rdf:resource="http://geos.whu.edu.cn:8099/resource/MODIS505f68f4-a8c7-4823-bad5-8672c02cc0ab"/>
         <li:output rdf:resource="http://geos.whu.edu.cn:8099/resource/MODIScb998e00-baf0-4594-bad2-5258bc4eb71f"/>
         <li:source rdf:resource="http://geos.whu.edu.cn:8099/resource/MODISbb39c5b9-c4e5-48f9-9d37-4347423b7ff1"/>
+        <li:processor rdf:resource="http://geos.whu.edu.cn:8099/resource/Processor78e5f4f8-5bae-4e17-aa07-6fca4a43e67d"/>
         <md:description>MODIS pre-process in ArcGIS</md:description>
         <li:stepDateTime>
           <iso19108:Period rdf:about="http://geos.whu.edu.cn:8099/resource/Period_MOD09A1_PreProcess">

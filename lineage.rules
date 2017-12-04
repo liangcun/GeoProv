@@ -1,6 +1,6 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix li: <http://geos.whu.edu.cn/ont/iso19115/lineage#> .
+@prefix li: <http://geos.whu.edu.cn/ont/iso19115/lineage.owl#> .
 @prefix md: <http://geos.whu.edu.cn/ont/iso19115/metadata.owl#> .
 @prefix iso19108: <http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
