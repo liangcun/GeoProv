@@ -14,11 +14,11 @@
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage_prov.owl">   
-        <dc:title>An OWL ontology mapping ISO 19115 lineage related concepts to PROV-O concepts</dc:title>    
+        <dc:title>An OWL ontology mapping from ISO 19115 lineage related concepts to PROV-O concepts</dc:title>    
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liangcun Jiang</dc:creator>    
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peng Yue</dc:creator>
         <dct:created>2015-07-14</dct:created>
-        <dct:modified>2017-03-27</dct:modified>
+        <dct:modified>2017-10-27</dct:modified>
         <owl:imports rdf:resource="http://geos.whu.edu.cn/ont/iso19115/metadata.owl"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/prov-o-20130430"/>
         <owl:imports rdf:resource="http://geos.whu.edu.cn/ont/iso19115/lineage.owl"/>
@@ -36,7 +36,7 @@
     <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#algorithm -->
 
     <rdf:Description rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#algorithm">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#entity"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#hadPlan"/>
     </rdf:Description>
     
 
@@ -57,7 +57,7 @@
     <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#processingInformation -->
 
     <rdf:Description rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#processingInformation">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#qualifiedUsage"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#qualifiedAssociation"/>
     </rdf:Description>
     
 
@@ -126,7 +126,7 @@
     <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_Algorithm -->
 
     <rdf:Description rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_Algorithm">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Plan"/>
     </rdf:Description>
     
 
@@ -142,7 +142,7 @@
     <!-- http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_Processing -->
 
     <rdf:Description rdf:about="http://geos.whu.edu.cn/ont/iso19115/lineage.owl#LE_Processing">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Association"/>
     </rdf:Description>
     
 
