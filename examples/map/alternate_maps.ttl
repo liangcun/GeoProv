@@ -1,0 +1,30 @@
+@prefix :     <http://geos.whu.edu.cn:8099/resource/> .
+@prefix li:  <http://geos.whu.edu.cn/ont/iso19115/lineage.owl#> .
+@prefix md:  <http://geos.whu.edu.cn/ont/iso19115/metadata.owl#> .
+@prefix sc:  <http://geos.whu.edu.cn/ont/iso19115/codelist/ScopeCode.owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+:Map_A a li:LI_Source, prov:Entity;
+  li:scope [
+    a md:MD_Scope;
+    md:level sc:Dataset;
+  ];
+  li:statement "lineage about online map for administrative region A." .
+
+:Map_A6 prov:specializationOf :Map_A;
+  prov:alternateOf :Map_A1, :Map_A2, :Map_A3, :Map_A4, :Map_A5.
+
+:Map_A5 prov:specializationOf :Map_A;
+  prov:alternateOf :Map_A1, :Map_A2, :Map_A3, :Map_A4, :Map_A6.
+
+:Map_A4 prov:specializationOf :Map_A;
+  prov:alternateOf :Map_A1, :Map_A2, :Map_A3, :Map_A5, :Map_A6.
+
+:Map_A3 prov:specializationOf :Map_A;
+  prov:alternateOf :Map_A1, :Map_A2, :Map_A4, :Map_A5, :Map_A6.
+
+:Map_A2 prov:specializationOf :Map_A;
+  prov:alternateOf :Map_A1, :Map_A3, :Map_A4, :Map_A5, :Map_A6.
+
+:Map_A1 prov:specializationOf :Map_A;
+  prov:alternateOf :Map_A2, :Map_A3, :Map_A4, :Map_A5, :Map_A6.

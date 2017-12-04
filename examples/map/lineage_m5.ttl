@@ -4,9 +4,10 @@
 @prefix sc:  <http://geos.whu.edu.cn/ont/iso19115/codelist/ScopeCode.owl#> .
 
 :lineage_m5
+  a li:LI_Lineage;
   li:scope [
-    a md:MD_Scope
-    md:level sc:attribute
+    a md:MD_Scope;
+    md:level sc:attribute;
   ];
   li:lineageSource :Map_A6, :Map_A5, :Overhead_Clearance_b;
   li:processStep :ps_m5;
@@ -16,29 +17,29 @@
   a li:LI_Source;
   md:description "overhead clearance attribute of Bridge_b";
   li:Scope [
-    a md:MD_Scope
-    md:level sc:attribute
+    a md:MD_Scope;
+    md:level sc:attribute;
   ].
 
 :Map_A6 
   a li:LI_Source;
   md:description "Version 6 of Map_A";
   li:Scope [
-    a md:MD_Scope
-    md:level sc:Dataset
+    a md:MD_Scope;
+    md:level sc:Dataset;
   ].
 
 :Map_A5 
   a li:LI_Source;
   md:description "Version 5 of Map_A";
   li:Scope [
-    a md:MD_Scope
-    md:level sc:Dataset
+    a md:MD_Scope;
+    md:level sc:Dataset;
   ].
 
 :ps_m5 
   a li:LE_ProcessStep;
-  md:description "update the overhead clearance attribute of Bridge_b in Map_A"
+  md:description "update the overhead clearance attribute of Bridge_b in Map_A";
   li:source :Map_A5;
   li:source :Overhead_Clearance_b;
   li:output :Map_A6.

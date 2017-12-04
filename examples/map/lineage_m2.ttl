@@ -4,9 +4,10 @@
 @prefix sc:  <http://geos.whu.edu.cn/ont/iso19115/codelist/ScopeCode.owl#> .
 
 :lineage_m2
+  a li:LI_Lineage;
   li:scope [
-    a md:MD_Scope
-    md:level sc:featureType
+    a md:MD_Scope;
+    md:level sc:featureType;
   ];
   li:lineageSource :Map_A2, :Map_A3, :RoadFeature;
   li:processStep :ps_m2;
@@ -16,30 +17,30 @@
   a li:LI_Source;
   md:description "Version 2 of Map_A";
   li:Scope [
-    a md:MD_Scope
-    md:level sc:Dataset
+    a md:MD_Scope;
+    md:level sc:Dataset;
   ].
 
 :Map_A3 
   a li:LI_Source;
   md:description "Version 3 of Map_A";
   li:Scope [
-    a md:MD_Scope
-    md:level sc:Dataset
+    a md:MD_Scope;
+    md:level sc:Dataset;
   ].
 
 :RoadFeature
   a li:LI_Source;
   md:description "road network in A";
   li:Scope [
-    a md:MD_Scope
-    md:level sc:featureType
+    a md:MD_Scope;
+    md:level sc:featureType;
   ].
 
 
 :ps_m2 
   a li:LE_ProcessStep;
-  md:description "resurvey of the road network in A"
+  md:description "resurvey of the road network in A";
   li:source :Map_A2;
   li:source :RoadFeature;
   li:output :Map_A3.

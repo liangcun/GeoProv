@@ -4,9 +4,10 @@
 @prefix sc:  <http://geos.whu.edu.cn/ont/iso19115/codelist/ScopeCode.owl#> .
 
 :lineage_m0
+  a li:LI_Lineage;
   li:scope [
-    a md:MD_Scope
-    md:level sc:Dataset
+    a md:MD_Scope;
+    md:level sc:Dataset;
   ];
   li:lineageSource :PMap_A, :Map_A1;
   li:processStep :Vectorization;
@@ -20,8 +21,8 @@
   a li:LI_Source;
   md:description "first version of online map for A";
   li:Scope [
-    a md:MD_Scope
-    md:level sc:Dataset
+    a md:MD_Scope;
+    md:level sc:Dataset;
   ].
 
 :Vectorization 
