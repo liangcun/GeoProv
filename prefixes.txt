@@ -1,9 +1,10 @@
-PREFIX : <http://202.114.118.190:8099/lod/>
+PREFIX : <http://geos.whu.edu.cn:8099/resource/>
 REFIX dex: <http://geos.whu.edu.cn/ont/ex/DataExplorationExample.owl#>
 PREFIX iso19108: <http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#>
 PREFIX li: <http://geos.whu.edu.cn/ont/iso19115/lineage.owl#>
 PREFIX li_prov: <http://geos.whu.edu.cn/ont/iso19115/lineage_prov.owl#>
 PREFIX md: <http://geos.whu.edu.cn/ont/iso19115/metadata.owl#>
+PREFIX sc: <http://geos.whu.edu.cn/ont/iso19115/codelist/ScopeCode.owl#>
 PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
 PREFIX geom: <http://geovocab.org/geometry#>
 PREFIX spatial: <http://geovocab.org/spatial#>

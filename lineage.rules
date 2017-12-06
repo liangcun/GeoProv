@@ -9,12 +9,12 @@
 [subPropertyRule: (?a ?p ?b), (?p rdfs:subPropertyOf ?q) -> (?a ?q ?b)]
 [associationRule: (?a li:processor ?b), (?b md:party ?c) 
   -> (?a prov:wasAssociatedWith ?c)]
-[attributionRule: (?a li:sourceStep ?b), (?b li:processor ?c), (?c md:party ?d) 
-  -> (?a prov:wasAttributedTo ?d)]
-[derivationRule: (?a li:sourceStep ?b), (?b li:source ?c) 
-  -> (?a prov:wasDerivedFrom ?c)]
+[attributionRule: (?a li:output ?b), (?a li:processor ?c), (?c md:party ?d) 
+  -> (?b prov:wasAttributedTo ?d)]
+[derivationRule: (?a li:output ?b), (?a li:source ?c) 
+  -> (?b prov:wasDerivedFrom ?c)]
 [delegationRule: (?a md:individual ?b) -> (?b prov:actedOnBehalfOf ?a)]
-[communicationRule: (?a li:source ?b), (?b li:sourceStep ?c) 
+[communicationRule: (?a li:source ?b), (?c li:output ?b) 
   -> (?a prov:wasInformedBy ?c)]
 [startRule: (?a li:stepDateTime ?b), (?b iso19108:begin ?c), (?c iso19108:dateTimePosition ?d)
   -> (?a prov:startedAtTime ?d)]
