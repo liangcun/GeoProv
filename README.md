@@ -13,6 +13,7 @@ Contents
 - [`queries/`](queries): SPARQL queries run over example provenance triples.
 - [`vocabularies/`](vocabularies): OWL ontologies about ISO 19115 lineage model and its mapping to W3C PROV.
 - [`lineage.rules`](lineage.rules): mapping rules in Jena Rule syntax.
+- [`prefixes.txt`](prefixes.txt): prefixes used in uses cases.
 
 Status
 ---------
