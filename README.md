@@ -12,7 +12,7 @@ Contents
 - [`examples/`](examples): Usage exmaples of geospatial data provenance in RDF.
 - [`queries/`](queries): SPARQL queries run over example provenance triples.
 - [`vocabularies/`](vocabularies): OWL ontologies about ISO 19115 lineage model and its mapping to W3C PROV.
-- [lineage.rules](lineage.rules): mapping rules in Jena Rule syntax.
+- ['lineage.rules'](lineage.rules): mapping rules in Jena Rule syntax.
 
 Status
 ---------
