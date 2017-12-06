@@ -1,0 +1,4 @@
+# SPARQL query to select a process step's end time
+# Answer to questions like Q12. 
+SELECT ?ps ?endTime
+WHERE { ?ps prov:endedAtTime ?endTime .}

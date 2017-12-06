@@ -1,0 +1,5 @@
+# SPARQL query to select roles that an agent played in an activity
+# Answer to questions like Q13. 
+SELECT ?agent ?role
+WHERE { ?qualifiedAssociation prov:agent ?agent .
+        ?qualifiedAssociation prov:hadRole ?role .}

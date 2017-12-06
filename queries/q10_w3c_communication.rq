@@ -1,0 +1,4 @@
+# SPARQL query to select communication relations using W3C PROV syntax
+# Answer to questions like Q10. 
+SELECT ?ps1 ?ps2 
+WHERE { ?ps1 prov:wasInformedBy ?ps2 .}

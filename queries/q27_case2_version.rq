@@ -1,0 +1,8 @@
+# SPARQL query on the mapUpate case (Use Case II) to select the previous version of an entity.
+# Answer to questions like Q27
+# Q27: What is the previous version of Map_A2?
+
+SELECT ?entity ?revisons
+WHERE { ?revisons prov:wasRevisionOf ?entity . }
+
+

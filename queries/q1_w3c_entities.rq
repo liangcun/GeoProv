@@ -1,3 +1,4 @@
 # SPARQL query to select all the entities
+# Answer to questions like Q1.
 SELECT ?entities
 WHERE { ?entities a prov:Entity.}

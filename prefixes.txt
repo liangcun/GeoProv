@@ -1,5 +1,5 @@
 PREFIX : <http://geos.whu.edu.cn:8099/resource/>
-REFIX dex: <http://geos.whu.edu.cn/ont/ex/DataExplorationExample.owl#>
+PREFIX dex: <http://geos.whu.edu.cn/ont/ex/DataExplorationExample.owl#>
 PREFIX iso19108: <http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#>
 PREFIX li: <http://geos.whu.edu.cn/ont/iso19115/lineage.owl#>
 PREFIX li_prov: <http://geos.whu.edu.cn/ont/iso19115/lineage_prov.owl#>

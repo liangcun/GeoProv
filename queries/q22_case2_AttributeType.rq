@@ -1,0 +1,8 @@
+# SPARQL query on the mapUpate case (Use Case II) at attributeType level
+# Answer to Question Q22. 
+# Q22: When was the attribute type “overhead clearance” modified?
+
+SELECT ?b ?time 
+WHERE { ?b a prov:Bundle .
+        ?b li:lineageSource :Overhead_Clearance. 
+        ?b prov:generatedAtTime ?time . }

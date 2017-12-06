@@ -1,0 +1,15 @@
+# SPARQL query on govData use case (Use Case III) to select information at feature and attribute levels
+
+SELECT DISTINCT ?feature ?admRegion ?popBornValue ?kgNum
+WHERE { :Resultcfe8fff5-b2ce-441c-9771-90e233f2b09e prov:wasDerivedFrom ?sj.
+        ?sj prov:wasDerivedFrom ?source .
+        ?source prov:hadMember ?feature .
+        ?feature spatial:PP ?adm .
+        ?adm rdfs:label ?admRegion .
+        ?feature dex:hasProperty ?popBornProperty .
+        ?popBornProperty a dex:PopBorn .
+        ?popBornProperty dex:value ?popBornValue .
+        FILTER(?popBornValue >= 1500) .
+        ?feature dex:hasProperty ?kgNumProperty .
+        ?kgNumProperty a dex:KindergartenNum .
+        ?kgNumProperty dex:value ?kgNum .}

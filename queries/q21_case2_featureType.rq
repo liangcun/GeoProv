@@ -1,0 +1,9 @@
+# SPARQL query on the mapUpate case (Use Case II) at featureType level
+# Answer to Question Q21
+# Q21: Who updated the road feature type?
+
+SELECT ?b ?agent 
+WHERE { ?b a prov:Bundle .
+        ?b li:lineageSource :RoadFeature. 
+        ?b prov:wasAttributedTo ?agent . }
+

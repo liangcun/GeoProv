@@ -1,0 +1,5 @@
+# SPARQL query to select delegation relations using W3C PROV syntax
+# Answer to questions like Q9 
+#(Provenance records for current use cases didn't capture such informaiton).
+SELECT ?individual ?organisation 
+WHERE { ?individual prov:actedOnBehalfOf ?organisation .}

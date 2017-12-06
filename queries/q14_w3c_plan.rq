@@ -1,0 +1,5 @@
+# SPARQL query to select plans that were used in an activity
+# Answer to questions like Q14 in Use Case I (waterCoverage). 
+
+SELECT ?psInfo ?algorithm
+WHERE { ?psInfo prov:hadPlan ?algorithm .}

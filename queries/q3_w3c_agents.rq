@@ -1,3 +1,4 @@
 # SPARQL query to select all the responsible parties with W3C PROV syntax
+# Answer to questions like Q3.
 SELECT ?agent
 WHERE { ?agent a prov:Agent.}

@@ -1,0 +1,8 @@
+# SPARQL query on the mapUpate case (Use Case II) to select alternate entities.
+# Answer to Question Q28
+# Q28: What is the alternate source for Map_A2?
+
+SELECT ?altEntities
+WHERE { ?altEntities prov:alternateOf :Map_A2. }
+
+

@@ -1,0 +1,6 @@
+# SPARQL query on the mapUpate case (Use Case II) to select specialized entites.
+
+SELECT ?generalEntity ?specializedEntity
+WHERE { ?specializedEntity prov:specializationOf ?generalEntity . }
+
+

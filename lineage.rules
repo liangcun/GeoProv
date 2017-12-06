@@ -21,3 +21,5 @@
 [endRule: (?a li:stepDateTime ?b), (?b iso19108:end ?c), (?c iso19108:dateTimePosition ?d)
   -> (?a prov:endedAtTime ?d)]
 [roleRule: (?a md:role ?b) -> (?a prov:hadRole ?b)]
+[generatedTimeRule: (?a md:dateInfo ?d), (?d md:date ?t) -> (?a prov:generatedAtTime ?t)]
+[bundleAgentRule: (?a md:contact ?b), (?b md:party ?c) -> (?a prov:wasAttributedTo ?c)]

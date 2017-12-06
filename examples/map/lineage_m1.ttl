@@ -2,12 +2,21 @@
 @prefix li:  <http://geos.whu.edu.cn/ont/iso19115/lineage.owl#> .
 @prefix md:  <http://geos.whu.edu.cn/ont/iso19115/metadata.owl#> .
 @prefix sc:  <http://geos.whu.edu.cn/ont/iso19115/codelist/ScopeCode.owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 
 :lineage_m1
   a li:LI_Lineage;
   li:scope [
     a md:MD_Scope;
     md:level sc:Dataset;
+  ];
+  md:dateInfo [
+    a md:CI_Date;
+    md:date "2017-03-12T11:20:00Z"^^xsd:dateTime;
+  ]; 
+  md:contact [
+    a md:CI_Responsibility;
+    md:party :Agent_M;
   ];
   li:lineageSource :Map_A2, :Map_A1;
   li:processStep :ps_m1;
@@ -16,7 +25,7 @@
 :Map_A2 
   a li:LI_Source;
   md:description "Version 2 of Map_A";
-  li:Scope [
+  li:scope [
     a md:MD_Scope;
     md:level sc:Dataset;
   ].
@@ -24,7 +33,7 @@
 :Map_A1 
   a li:LI_Source;
   md:description "first version of online map for A";
-  li:Scope [
+  li:scope [
     a md:MD_Scope;
     md:level sc:Dataset;
   ].
@@ -34,3 +43,4 @@
   li:source :Map_A1;
   li:output :Map_A2.
 
+:Agent_M a md:Party.

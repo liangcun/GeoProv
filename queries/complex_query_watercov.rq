@@ -1,0 +1,10 @@
+# SPARQL query to select activities invovled in the waterCoverage use case, and their responsible agents, input entities, and execution time.
+# A complex query against questions like Q2, Q3, Q4, Q11, and Q12.
+
+SELECT ?activities ?inputEntity ?startTime ?endTime
+WHERE { ?activities a prov:Activity .
+        ?activities prov:wasAssociatedWith ?agent .
+        ?activities prov:used ?inputEntity .
+        ?activities prov:startedAtTime ?startTime .
+        ?activities prov:endedAtTime ?endTime .}
+

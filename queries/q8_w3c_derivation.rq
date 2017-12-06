@@ -1,3 +1,4 @@
 # SPARQL query to select derivation relations using W3C PROV syntax
+# Answer to questions like Q8.
 SELECT ?output ?source 
 WHERE { ?output prov:wasDerivedFrom ?source .}

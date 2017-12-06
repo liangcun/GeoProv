@@ -1,3 +1,4 @@
 # SPARQL query to select generation relations using W3C PROV syntax
+# Answer to questions like Q5.
 SELECT ?activity ?entity 
 WHERE { ?activity prov:generated ?entity .}

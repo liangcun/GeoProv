@@ -1,0 +1,10 @@
+# SPARQL query on the mapUpate case (Use Case II) at attribute instance level
+# Answer to Question Q24
+# Q24: Who modified the overhead clearance attribute of the new bridge b?
+
+SELECT ?b ?agent 
+WHERE { ?b a prov:Bundle .
+        ?b li:lineageSource :Bridge_b. 
+        ?b prov:wasAttributedTo ?agent . }
+
+

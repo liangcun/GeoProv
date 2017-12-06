@@ -2,6 +2,7 @@
 @prefix li:  <http://geos.whu.edu.cn/ont/iso19115/lineage.owl#> .
 @prefix md:  <http://geos.whu.edu.cn/ont/iso19115/metadata.owl#> .
 @prefix sc:  <http://geos.whu.edu.cn/ont/iso19115/codelist/ScopeCode.owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 
 :Map_A a li:LI_Source, prov:Entity;
@@ -9,21 +10,28 @@
     a md:MD_Scope;
     md:level sc:Dataset;
   ];
+  prov:wasAttributedTo :Agent_M;
+  prov:generatedAtTime "2017-09-20T13:46:00Z"^^xsd:dateTime;
   li:statement "lineage about online map for administrative region A." .
 
 :Map_A6 prov:specializationOf :Map_A;
+  prov:wasRevisionOf :Map_A5;
   prov:alternateOf :Map_A1, :Map_A2, :Map_A3, :Map_A4, :Map_A5.
 
 :Map_A5 prov:specializationOf :Map_A;
+  prov:wasRevisionOf :Map_A4;
   prov:alternateOf :Map_A1, :Map_A2, :Map_A3, :Map_A4, :Map_A6.
 
 :Map_A4 prov:specializationOf :Map_A;
+  prov:wasRevisionOf :Map_A3;
   prov:alternateOf :Map_A1, :Map_A2, :Map_A3, :Map_A5, :Map_A6.
 
 :Map_A3 prov:specializationOf :Map_A;
+  prov:wasRevisionOf :Map_A2;
   prov:alternateOf :Map_A1, :Map_A2, :Map_A4, :Map_A5, :Map_A6.
 
 :Map_A2 prov:specializationOf :Map_A;
+  prov:wasRevisionOf :Map_A1;
   prov:alternateOf :Map_A1, :Map_A3, :Map_A4, :Map_A5, :Map_A6.
 
 :Map_A1 prov:specializationOf :Map_A;

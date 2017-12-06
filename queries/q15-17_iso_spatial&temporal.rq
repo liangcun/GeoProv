@@ -1,0 +1,8 @@
+# SPARQL query for waterCoverage use case to retrieve spatial and temporal information with ISO lineage syntax
+# Answer to questions like Q15-Q17. 
+SELECT DISTINCT ?srcDescription ?extent ?resolution ?referenceSystem
+WHERE { :MODISbb39c5b9-c4e5-48f9-9d37-4347423b7ff1 md:description ?srcDescription .
+        :MODISbb39c5b9-c4e5-48f9-9d37-4347423b7ff1 li:scope ?scope .
+        ?scope md:extent ?extent .
+        :MODISbb39c5b9-c4e5-48f9-9d37-4347423b7ff1 li:sourceSpatialResolution ?resolution .
+        :MODISbb39c5b9-c4e5-48f9-9d37-4347423b7ff1 li:sourceReferenceSystem ?referenceSystem .} 

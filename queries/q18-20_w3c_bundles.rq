@@ -1,0 +1,8 @@
+# SPARQL query to select information about bundles
+# Answer to questions like Q18 - Q20. 
+
+SELECT DISTINCT ?bundle ?agent ?time
+WHERE { ?bundle a prov:Bundle .
+      ?bundle prov:qualifiedAttribution ?attr . 
+      ?attr prov:agent ?agent . 
+      ?bundle prov:generatedAtTime ?time . } 

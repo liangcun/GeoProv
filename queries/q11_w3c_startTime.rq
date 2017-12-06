@@ -1,0 +1,4 @@
+# SPARQL query to select a process step’s start time
+# Answer to questions like Q11. 
+SELECT ?ps ?startTime 
+WHERE { ?ps prov:startedAtTime ?startTime .}

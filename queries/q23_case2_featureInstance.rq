@@ -1,0 +1,10 @@
+# SPARQL query on the mapUpate case (Use Case II) at feature instance level
+# Answer to Question Q23
+# Q23: Which features were added in Map_A5?
+
+SELECT DISTINCT ?feature 
+WHERE { ?feature a prov:Entity .
+        ?feature li:scope ?scope . 
+        ?scope md:level sc:feature .
+        :Map_A5 prov:wasDerivedFrom ?feature. }
+
