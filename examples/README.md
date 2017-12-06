@@ -8,7 +8,7 @@ Note that data sources involved in the "govdata" use case are also exposed as li
 Contents
 ----------------------
 - [`waterCoverage/`](waterCoverage): Case I: Provenance for raster processing workflow.
-- [`mapUpdate/`](mapUpdate/`): Case II: Provenance tracking in online map updates.
+- [`mapUpdate/`](mapUpdate): Case II: Provenance tracking in online map updates.
 - [`govData/`](govData): Case III: Provenance for correlation analysis in the open government data exploration 
 
 Descriptions
@@ -23,6 +23,6 @@ The following figures present graphical illustrations of the provenance informat
    ![mapDate illustration](figures/provenance_illustration_of_map.png "mapUpdate illustration")
 
 - ####  Case III: Provenance for correlation analysis in the open government data exploration   
-   Supposing that a demographer produced a correlation diagram between the number of kindergartens and the population of births in the city of Wuhan, China. Two data sources were used: point-based kindergarten features and demographic dataset. He first joined the two data sources in ArcGIS, and got a grid-based “SpatialJoin” result with “kindergarten number” and “newborn population” properties. Then he ran correlation analysis using these two properties in R and produced the correlation result. Fig. 4 shows a graphical illustration of provenance in this use case. Each dot in the result diagram represents a grid cell in the “SpatialJoin” result. The result diagram shows some abnormal “dots” where the born population is high while the number of kindergartens is low. Users may want to trace these “dots” with the assistance of provenance descriptions and find out which administrative regions those cells with abnormal “dots” are located in.
+   Supposing that a demographer produced a correlation diagram between the number of kindergartens and the population of births in the city of Wuhan, China. Two data sources were used: point-based kindergarten features and demographic dataset. He first joined the two data sources in ArcGIS, and got a grid-based “SpatialJoin” result with “kindergarten number” and “newborn population” properties. Then he ran correlation analysis using these two properties in R and produced the correlation result. The following figure shows a graphical illustration of provenance in this use case. Each dot in the result diagram represents a grid cell in the “SpatialJoin” result. The result diagram shows some abnormal “dots” where the born population is high while the number of kindergartens is low. Users may want to trace these “dots” with the assistance of provenance descriptions and find out which administrative regions those cells with abnormal “dots” are located in.
    ![govdata illustration](figures/provenance_illustration_of_govdata.png "govdata illustration")
 
