@@ -1,3 +1,7 @@
+Geospatial provenace questions in use cases
+========
+*Note:* This list is not exhaustive. 
+
 Q1: What data sources were used in the creation of PyL01?
 Q2: How was PyL01 created?
 Q3: Who contributed to the creation of PyL01?
@@ -19,7 +23,7 @@ Q18: Who created Bunlde1?
 Q19: How and when was Bundle1 created? 
 Q20: What is the complete editing history of Map_A?
 Q21: Who updated the road feature type?
-Q22: When was the attribute type °∞overhead clearance°± modified?
+Q22: When was the attribute type ‚Äúoverhead clearance‚Äù modified?
 Q23: Which features were added in Map_A5?
 Q24: Who modified the overhead clearance attribute of the new bridge b?
 Q25: Which grid cells contain a low number of kindergarten features?
