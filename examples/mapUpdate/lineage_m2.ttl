@@ -22,14 +22,6 @@
   li:processStep :ps_m2;
   li:statement "the road network (RoadFeature) in region A was resurveyed." .
 
-:Map_A2 
-  a li:LI_Source;
-  md:description "Version 2 of Map_A";
-  li:scope [
-    a md:MD_Scope;
-    md:level sc:Dataset;
-  ].
-
 :Map_A3 
   a li:LI_Source;
   md:description "Version 3 of Map_A";

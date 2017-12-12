@@ -38,14 +38,6 @@
     md:level sc:Dataset;
   ].
 
-:Map_A3 
-  a li:LI_Source;
-  md:description "Version 3 of Map_A";
-  li:scope [
-    a md:MD_Scope;
-    md:level sc:Dataset;
-  ].
-
 :ps_m3 
   a li:LE_ProcessStep;
   md:description "resurvey of overhead clearance attribute of the road network in A";

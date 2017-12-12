@@ -30,14 +30,6 @@
     md:level sc:Dataset;
   ].
 
-:Map_A1 
-  a li:LI_Source;
-  md:description "first version of online map for A";
-  li:scope [
-    a md:MD_Scope;
-    md:level sc:Dataset;
-  ].
-
 :ps_m1 
   a li:LE_ProcessStep;
   li:source :Map_A1;

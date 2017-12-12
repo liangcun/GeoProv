@@ -30,14 +30,6 @@
     md:level sc:feature;
   ].
 
-:Map_A4 
-  a li:LI_Source;
-  md:description "Version 4 of Map_A";
-  li:scope [
-    a md:MD_Scope;
-    md:level sc:Dataset;
-  ].
-
 :Map_A5 
   a li:LI_Source;
   md:description "Version 5 of Map_A";
