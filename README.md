@@ -1,6 +1,6 @@
 GeoProv
 ========
-*Abstract:* This repository contains data and files mentioned in the article "Advancing interoperability of geospatial data provenance on the web: Gap analysis and strategies". It provides a mapping from ISO lineage terms [1] to the W3C PROV-O [2]. [Examples](examples) and [queries](queries) are given to demonstrate the mapping. The mapping ontology allows domain experts to use W3C PROV syntax to query and consume geospatial data provenance information encoded with the ISO lineage model, improving interoperability between ISO lineage and PROV applications.
+*Abstract:* This repository contains data and files mentioned in the article "*Advancing interoperability of geospatial data provenance on the web: Gap analysis and strategies*(https://doi.org/10.1016/j.cageo.2018.05.001)"[1]. It provides a mapping from ISO lineage terms [2] to the W3C PROV-O [3]. [Examples](examples) and [queries](queries) are given to demonstrate the mapping. The mapping ontology allows domain experts to use W3C PROV syntax to query and consume geospatial data provenance information encoded with the ISO lineage model, improving interoperability between ISO lineage and PROV applications.
 
 *Keywords:* geospatial data provenance; lineage model; ISO 19115; W3C PROV
 
@@ -22,6 +22,7 @@ The example provenance data are also availabe at a ([SPARQL server](http://geos.
 
 References
 ----------
-- [1] ISO/TC 211, 2014. ISO 19115-1:2014 Geographic information-Metadata-Part 1: Fundamentals. Geneva, Switzerland.
-- [2] Lebo, T., Sahoo, S., and McGuinness, D., 2013. PROV-O: The PROV Ontology [online]. W3C recommendation. Available from: https://www.w3.org/TR/2013/REC-prov-o-20130430/ [Accessed 17 Feb 2017].
+- [1] Jiang, L., Yue, P., Kuhn, W., Zhang, C., Yu, C., and Guo, X., 2018. Advancing interoperability of geospatial data provenance on the web: Gap analysis and strategies. Computers & Geosciences, 117, 21-31.
+- [2] ISO/TC 211, 2014. ISO 19115-1:2014 Geographic information-Metadata-Part 1: Fundamentals. Geneva, Switzerland.
+- [3] Lebo, T., Sahoo, S., and McGuinness, D., 2013. PROV-O: The PROV Ontology [online]. W3C recommendation. Available from: https://www.w3.org/TR/2013/REC-prov-o-20130430/ [Accessed 17 Feb 2017].
 
