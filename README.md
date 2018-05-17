@@ -5,7 +5,7 @@ GeoProv
 *Keywords:* geospatial data provenance; lineage model; ISO 19115; W3C PROV
 
 Members & contributors:
-- xxx
+- Liangcun Jiang
 
 Contents
 ----------------------
@@ -22,7 +22,7 @@ The example provenance data are also availabe at a ([SPARQL server](http://geos.
 
 References
 ----------
-- [1] Jiang, L., Yue, P., Kuhn, W., Zhang, C., Yu, C., and Guo, X., 2018. Advancing interoperability of geospatial data provenance on the web: Gap analysis and strategies. Computers & Geosciences, 117, 21-31.
+- [1] Jiang, L., Yue, P., Kuhn, W., Zhang, C., Yu, C., and Guo, X., 2018. Advancing interoperability of geospatial data provenance on the web: Gap analysis and strategies. *Computers & Geosciences*, 117, 21-31.
 - [2] ISO/TC 211, 2014. ISO 19115-1:2014 Geographic information-Metadata-Part 1: Fundamentals. Geneva, Switzerland.
 - [3] Lebo, T., Sahoo, S., and McGuinness, D., 2013. PROV-O: The PROV Ontology [online]. W3C recommendation. Available from: https://www.w3.org/TR/2013/REC-prov-o-20130430/ [Accessed 17 Feb 2017].
 
